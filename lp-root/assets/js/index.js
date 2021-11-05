@@ -77,15 +77,18 @@ const howToPlay =document.querySelector('.how-to-play');
 const closeHtpArea = document.querySelector('.close-htp-area');
 
 htpBtn.addEventListener('click', ()=> {
-    howToPlay.classList.remove('d-none');
+    howToPlay.classList.toggle('htp-hidden');
+    howToPlay.classList.toggle('htp-active');
 });
 
 closeHtpBtn.addEventListener('click', () => {
-    howToPlay.classList.add('d-none');
+    howToPlay.classList.toggle('htp-hidden');
+    howToPlay.classList.toggle('htp-active');
 });
 
 closeHtpArea.addEventListener('click', () => {
-    howToPlay.classList.add('d-none');
+    howToPlay.classList.toggle('htp-hidden');
+    howToPlay.classList.toggle('htp-active');
 })
 
 
