@@ -40,6 +40,7 @@ const dataSet = async () => {
     const getQuestionSet = (difficulty) => {
         for(let i = 0; i <= randomNumbers.length -1; i++){
             document.querySelector('section').innerHTML += `<p>${difficulty[randomNumbers[i]-1].question}</p>`;
+            console.log(difficulty[randomNumbers[i]-1]);
             questionSet.push(difficulty[randomNumbers[i]-1]);
         }
     }
