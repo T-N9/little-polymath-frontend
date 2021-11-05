@@ -1,0 +1,533 @@
+{
+    "easy" : [
+        {
+            "question" : "ကမ္ဘာ့အကြီးဆုံးတိုက်မှာ မည်သည့်တိုက်ဖြစ်သနည်း။",
+            "id" : 1,
+            "option" : [
+                "အာရှတိုက်",
+                "မြောက်အမေရိကတိုက်",
+                "အာဖရိကတိုက်",
+                "ဥရောပတိုက်"
+            ],
+            "answer" : "အာရှတိုက်",
+            "explanation" : "အာရှတိုက်သည် လူဦးရေအများဆုံးနှင့် အကြီးဆုံး တိုက်ဖြစ်ပါသည်။ကမ္ဘာ့ အရှေ့ခြမ်းတွင်တည်ရှိပြီး နိုင်ငံပေါင်း ၄၈ နိုင်ငံဖြင့် ဖွဲ့စည်းထားပါသည်။",
+            "category" : "ပထဝီ"        
+        },
+        {
+            "question" : "လွန်ခဲ့သော သုံးနှစ်က မောင်ဘသည် မောင်မြထက်အသက်(၅)နှစ်ပိုကြီးသည်။ ယခုလက်ရှိအချိန်တွင် မောင်ဘနှင့် မောင်မြသည်အသက်မည်မျှပိုကြီးသနည်း။",
+            "id" : 2,
+            "option" : [
+                "၃နှစ်",
+                "၅နှစ်",
+                "၈နှစ်",
+                "၁၀နှစ်"
+            ],
+            "answer" : "၅နှစ်",
+            "explanation" : "လွန်ခဲ့သော ၃ နှစ်တွင် မောင်ဘသည် မောင်မြထက်    အသက်(၅)နှစ်ပိုကြီးခဲ့လျှင် ယခုအချိန်တွင်လည်း အသက်ကွာခြားမှုမှာ (၅)နှစ်ပင်ဖြစ်သည်။",
+            "category" : "သင်္ချာ"        
+        },
+        {
+            "question" : "သာမန် Guitar(ဂီတာ)တစ်လုံးတွင် ကြိုးမည်မျှပါဝင်သနည်း။",
+            "id" : 3,
+            "option" : [
+                "၅ကြိုး",
+                "၆ကြိုး",
+                "၇ကြိုး",
+                "၈ကြိုး"
+            ],
+            "answer" : "၆ကြိုး",
+            "explanation" : "စံပြဂီတာ တစ်လုံးတွင် ကြိုး ၆ ကြိုးပါဝင်ပြီး ၄၊ ၇၊ ၈၊ ၉၊ ၁၀၊ ၁၁၊ ၁၂၊ ၁၃ ကနေ ၁၈ကြိုးအထိ တပ်ဆင်အသုံးပြုနိုင်သော ဂီတာများလည်းရှိပါသည်။",
+            "category" : "ဂီတ"        
+        },
+        {
+            "question" : "Penicillin(ပင်နီဆီလင်)ဆေးကို ရှာဖွေတွေ့ရှိသူမှာ-",
+            "id" : 4,
+            "option" : [
+                "Edward Jenner",
+                "Robert Koch",
+                "Alexander Fleming",
+                "Ernst Chain"
+            ],
+            "answer" : "Alexander Fleming",
+            "explanation" : "Penicillin ကဲ့သို့ ပထမဆုံး ပဋိဇီဝ ဆေးကို Londonမြို့ St.Mary's ဆေးရုံ၏ ဗက်တီးရီးယားဗေဒ ပါမောက္ခ Alexandar Fleming ကရှာဖွေတွေ့ရှိခဲ့ပါသည်။",
+            "category" : "တီထွင်မှုများ"        
+        },
+        {
+            "question" : "၁ ဖာလုံတွင် မည်မျှ သံကြိုးရှိသနည်း။",
+            "id" : 5,
+            "option" : [
+                "၉",
+                "၁၀",
+                "၁၁",
+                "၁၂"
+            ],
+            "answer" : "၁၀",
+            "explanation" : "၂၂ လက်မ ၁ သံကြိုး ၊ ၁၀သံကြိုး  ၁ ဖာလုံ ၊ ၈ဖာလုံ ၁ မိုင်",
+            "category" : "အတိုင်းအတာများ"        
+        },
+        {
+            "question" : "Donal Duck ဇာတ်ကောင်ကို မည်သည့် ထုတ်လုပ်ရေးကုမ္ပဏီမှ ဖန်တီးခဲ့သနည်း။",
+            "id" : 6,
+            "option" : [
+                "Warner Bros.",
+                "DreamWorks Pictures",
+                "Universal Pictures",
+                "Walt Disney Pictures"
+            ],
+            "answer" : "Walt Disney Pictures",
+            "explanation" : "Donal Duck ကာတွန်းဇာတ်ကောင်ကို 1934ခုနှစ်တွင် Walt Disney production မှ ဖန်တီးခဲ့ပါသည်။",
+            "category" : "ရုပ်ရှင်"        
+        },
+        {
+            "question" : "ဘရာဇီးလ်(Brazil)နိုင်ငံသည် မည်သည့် တိုက်တွင် တည်ရှိသနည်း။",
+            "id" : 7,
+            "option" : [
+                "အာရှတိုက်",
+                "မြောက်အမေရိကတိုက်",
+                "အာဖရိကတိုက်",
+                "တောင်အမေရိကတိုက်"
+            ],
+            "answer" : "တောင်အမေရိကတိုက်",
+            "explanation" : "ဘရာဇီးလ် နိုင်ငံသည် တောင်အမေရိကတိုက်တွင် အကြီးဆုံးနိုင်ငံဖြစ်ပြီး ကမ္ဘာ့အကြီးဆုံးနိုင်ငံ အဆင့် ၅  ရရှိထားပါသည်။",
+            "category" : "နိုင်ငံများ"        
+        },
+        {
+            "question" : "အောက်ပါတို့မှ Scalar quantityကို ရွေးချယ်ပါ။",
+            "id" : 8,
+            "option" : [
+                "Velocity",
+                "Displacement",
+                "Speed",
+                "Force"
+            ],
+            "answer" : "Speed",
+            "explanation" : "Speed နှင့် Temperature တို့သည်ထင်ရှားသော scalar quatityများဖြစ်ကြသည်။",
+            "category" : "ရူပ‌ဗေဒ"        
+        }
+    ],
+    "easy_medium": [
+        {
+            "question" : "မည်သည့်ခုနှစ်တွင် ပင်လုံစာချုပ် ချုပ်ဆိုခဲ့သနည်း။",
+            "id" : 1,
+            "option" : [
+                "၁၉၄၅",
+                "၁၉၄၆",
+                "၁၉၄၇",
+                "၁၉၄၈"
+            ],
+            "answer" : "၁၉၄၇",
+            "explanation" : "၁၉၄၇ခုနှစ် ဖေဖော်ဝါရီလ ၁၂ရက်တွင် ရှမ်းပြည်နယ်တောင်ပိုင်း ပင်လုံမြို့၌ တိုင်းရင်းသားလူမျိုးများအားလုံး သွေးစည်းညီညွတ်ခြင်းအထိမ်းအမှတ်အဖြစ်ချုပ်ဆိုခဲ့သော စာချုပ်ဖြစ်ပါသည်။",
+            "category" : "သမိုင်း"        
+        },
+        {
+            "question" : "အာကာသဆိုင်ရာ အရာဝတ္ထုများနှင့် ဖြစ်စဉ်များကိုလေ့လာသော ဘာသာရပ်မှာ-",
+            "id" : 2,
+            "option" : [
+                "Astronomy",
+                "Autonomy",
+                "Aeronomy",
+                "Agronomy"
+            ],
+            "answer" : "Astronomy",
+            "explanation" : "Astronomy(နက္ခတ္တဗေဒ)သည် Cosmic background radiation ကဲ့သို့ ကမ္ဘာ့လေထု၏အပြင်ဘက် အာကာသဖြစ်စဉ်များ နှင့် ကြယ်များ၊ဂြိုဟ်များ၊ကြယ်တံခွန်များ နှင့်နဂါးငွေ့တန်းများ ကိုလေ့လာသောဘာသာရပ်ဖြစ်ပါသည်။",
+            "category" : "ဘာသာရပ်များ"        
+        },
+        {
+            "question" : "ကမ္ဘာ့အမြင့်ဆုံး အဆောက်အဦးမှာ-",
+            "id" : 3,
+            "option" : [
+                "Shanghai Tower",
+                "One World Trade Center",
+                "Makkah Clock Tower",
+                "Burj Khalifa"
+            ],
+            "answer" : "Burj Khalifa",
+            "explanation" : "Burj Khalifa သည် အာရပ်စော်ဘွားများပြည်ထောင်စု တွင်တည်ရှိသော မိုးမျှော်တိုက် ဖြစ်ပြီး ၂၀၁၀တွင်ဖွင့်လှစ်ကာ အမြင့် ၈၂၉.၈ မီတာရှိပါသည်။",
+            "category" : "အဆောက်အဦးများ"        
+        },
+        {
+            "question" : "Ford Motor company မှာ မည့်သည့်နိုင်ငံမှ ဖြစ်သနည်း။",
+            "id" : 4,
+            "option" : [
+                "Korea",
+                "Japan",
+                "USA",
+                "Germany"
+            ],
+            "answer" : "USA",
+            "explanation" : "Ford Motor company သည် အမေရိကန် မော်တော်ကား ကုမ္ပဏီဖြစ်ပြီး ၁၉၀၃ခုနှစ် ဇွန်လ ၁၆ရက်နေ့တွင် Henry Fordမှ တည်ထောင်ခဲ့ပါသည်။",
+            "category" : "စက်မှုလုပ်ငန်း"        
+        },
+        {
+            "question" : "ကျွန်ုပ်တို့ နေအဖွဲ့အစည်းတွင် ဂြိုဟ်မည်မျှ ရှိသနည်း။",
+            "id" : 5,
+            "option" : [
+                "၉",
+                "၈",
+                "၇",
+                "၁၀"
+            ],
+            "answer" : "၈",
+            "explanation" : "ကျွန်ုပ်တို့ နေအဖွဲ့အစည်းတွင် Mercury, Venus, Earth, Mars Jupiter, Saturn, Uranus နှင့် Neptune ဟူ၍ ဂြိုဟ်ကြီး ၈လုံး လည်ပတ်နေပါသည်။",
+            "category" : "ဂြိုဟ်များ"        
+        },
+        {
+            "question" : "UFO ၏ အရှည်ကောက်မှာ-",
+            "id" : 6,
+            "option" : [
+                "Unknown Flighting Object",
+                "Unidentified Flying Object",
+                "Unidentified Finding Operator",
+                "Unknown Files Organizer"
+            ],
+            "answer" : "Unidentified Flying Object",
+            "explanation" : "Unidentified Flying Object ဆိုသည်မှာ ရုတ်တရက်ကြည့်ရုံနှင့် ခွဲခြားသိမြင်၍မရနိုင်သော လေကြောင်းဖြစ်စဉ် အဖြစ်လူသိများသော အသုံးအနှုန်းဖြစ်ပါသည်။  အမည်မသိပျံသန်းနေသောအရာ ပန်းကန်ပြားပျံ ဟုလည်းလူသုံးများပါသည်။",
+            "category" : "အတိုကောက်စကားလုံးများ"        
+        },
+        {
+            "question" : "\"First Man\"ရုပ်ရှင်ဇာတ်ကားသည် မည်သည့် ပုဂ္ဂိုလ်အကြောင်းမှတ်တမ်းတင်သည့် ဇာတ်ကားဖြစ်သနည်း။",
+            "id" : 7,
+            "option" : [
+                "Bill Clinton",
+                "Barack Obama",
+                "Alfred Nobel",
+                "Neil Armstrong"
+            ],
+            "answer" : "Neil Armstrong",
+            "explanation" : "First Man ရုပ်ရှင်ဇာတ်ကားသည် အာကာသယာဉ်မှူး Neil Armstrong ၏ဘဝအကြောင်းနှင့် သူ၏ကမ္ဘာကျော် mission လပေါ်တွင် လမ်းလျှောက်ခြင်းအကြောင်း ရိုက်ကူးထားသော Drama/Sci-fi အမျိုးအစား ဇာတ်ကားဖြစ်ပါသည်။",
+            "category" : "လူပုဂ္ဂိုလ်များ"        
+        },
+        {
+            "question" : "အစာအိမ်ရောဂါ၏ အမည်မှာ-",
+            "id" : 8,
+            "option" : [
+                "Diabetes",
+                "Typhoid",
+                "Gastric",
+                "Diarrhea"
+            ],
+            "answer" : "Gastric",
+            "explanation" : "စိတ်ဖိစီးမှုများခြင်း၊ ပုံမမှန်သော စားသောက်နည်းစနစ် များသည် အစာအိမ်ရောဂါဖြစ်စေပါသည်။",
+            "category" : "အခေါ်အဝေါ်များ"        
+        }
+    ],
+    "medium": [
+        {
+            "question" : "မည်သည့် Programming Language သည် Applet Program များကိုဖန်တီးရာတွင် အသုံးပြုသနည်း။",
+            "id" : 1,
+            "option" : [
+                "COBOL",
+                "C Language",
+                "BASIC",
+                "Java"
+            ],
+            "answer" : "Java",
+            "explanation" : "Applet program သည် web browser များတွင် embedded ပြုလုပ်နိုင်သော Java program တစ်မျိုးဖြစ်ပါသည်။",
+            "category" : "IT"        
+        },
+        {
+            "question" : "Elon Musk နှင့် မသက်ဆိုင်သော အရာမှာ-",
+            "id" : 2,
+            "option" : [
+                "SpaceX",
+                "Paypal",
+                "Amazon",
+                "Tesla"
+            ],
+            "answer" : "Amazon",
+            "explanation" : "စွန့်ဦးတီထွင်သူ Elon Musk သည် SpaceX, Paypal , Tesla ကဲ့သို့ ကမ္ဘာကျော် ကုမ္ပဏီများတွင် Founder,co-founder, chairman စသည်ဖြင့်တာဝန်ထမ်းဆောင်လျက်ရှိပြီး Neuralink, The Boring Company, Zip2, OpenAI, SolarCity အဖွဲ့အစည်းများတွင်လည်း သက်ဆိုင်ရာ ရာထူးများကို ပိုင်ဆိုင်ထားပါသည်။",
+            "category" : "တည်ထောင်သူများ"        
+        },
+        {
+            "question" : "Ed Sheeran ရေးသားခဲ့သော သီချင်းတစ်ပုဒ်မှာ-",
+            "id" : 3,
+            "option" : [
+                "Love Story",
+                "Supermarket Flowers",
+                "Story of My Life",
+                "We own the night"
+            ],
+            "answer" : "Supermarket Flowers",
+            "explanation" : "\"Supermarket flowers\"သီချင်းသည် အမေရိကန် တေးရေး တေးဆို Ed Sheeran ၏ သုံးခုမြောက် albumဖြစ်သော \"divide ÷\"၂၀၁၇ တွင်ပါဝင်သော သီချင်းတစ်ပုဒ်ဖြစ်ပါသည်။",
+            "category" : "အနုပညာ"        
+        },
+        {
+            "question" : "IMDb rating အမြင့်ဆုံးရရှိထားသော ဇာတ်ကားမှာ-",
+            "id" : 4,
+            "option" : [
+                "Titanic",
+                "The Shawshank Redemption",
+                "Avatar",
+                "Avengers:Endgame"
+            ],
+            "answer" : "The Shawshank Redemption",
+            "explanation" : "The Shawshank Redemption ဇတ်ကားသည် အမေရိကန် Drama ဇာတ်ကားတစ်ကားဖြစ်ပါသည်။ ၁၉၉၄ ခုနှစ်တွင် ထွက်ရှိခဲ့ပြီး IMDb rating 9.3/10 ရရှိထားသော ဇာတ်ကားကောင်းတစ်ကားဖြစ်ပါသည်။",
+            "category" : "ရုပ်ရှင်ကားများ"        
+        },
+        {
+            "question" : "ဘောလုံးကွင်းရှိ ဂိုးတိုင်(Goalpost)၏ အမြင့်မှာ-",
+            "id" : 5,
+            "option" : [
+                "၇ပေခွဲ",
+                "၈ပေ",
+                "၇ပေ",
+                "၈ပေခွဲ"
+            ],
+            "answer" : "၈ပေ",
+            "explanation" : "ဘောလုံးကွင်းရှိ ဂိုးတိုင်(Goalpost)တစ်ခု ၏ အမြင့်မှာ ၈ပေရှိပြီး အနံမှာ ၂၄ပေရှိပါသည်။",
+            "category" : "အားကစား"        
+        },
+        {
+            "question" : "2008 Summer Olympic ကိုမည်သည့်မြို့တွင် ကျင်းပခဲ့သနည်း။",
+            "id" : 6,
+            "option" : [
+                "Beijing",
+                "Rio de Janeiro",
+                "London",
+                "Tokyo"
+            ],
+            "answer" : "Beijing",
+            "explanation" : "2008 Summer Olympic ကို တရုတ်နိုင်ငံ Beijing မြို့တွင်ကျင်းပခဲ့ပြီး နိုင်ငံပေါင်း ၂၀၄နိုင်ငံ ပါဝင်ယှဉ်ပြိုင်ခဲ့ပါသည်။",
+            "category" : "အားကစား"        
+        },
+        {
+            "question" : "အမေရိကန်စစ်တပ် ပါဝင်ပက်သက်သော စစ်ပွဲများတွင် ဒုတိယမြောက် အရှည်ကြာဆုံး စစ်ပွဲမှာ-",
+            "id" : 7,
+            "option" : [
+                "Iraq War",
+                "American Revolution War",
+                "Vietnam War",
+                "War in Afghanistan"
+            ],
+            "answer" : "Vietnam War",
+            "explanation" : "Vietnam Warသည် ဒုတိယမြောက်အရှည်ကြာဆုံးစစ်ပွဲဖြစ်ပြီး ၁၉၅၅/၁၁ မှ ၁၉၇၃/၄ အထိကြာမြင့်ခဲ့ပါသည်။ ပထမမြောက် အရှည်ကြာဆုံးမှာ War in Afghanistan ဖြစ်ပြီး ၂၀၀၁/၁၀ မှ ယနေ့တိုင် ဖြစ်ပါသည်။",
+            "category" : "သမိုင်း"        
+        },
+        {
+            "question" : "အမေရိက နိုင်ငံ၏ လွတ်လပ်ရေးနေ့မှာ-",
+            "id" : 8,
+            "option" : [
+                "March 3",
+                "July 9",
+                "July 4",
+                "August 6"
+            ],
+            "answer" : "July 4",
+            "explanation" : "လွတ်လပ်ရေးနေ့ကြေညာခြင်းကို ၁၇၇၆ခုနှစ် July ၄ ရက်နေ့တွင် စတင်သတ်မှတ်ခဲ့ပါသည်။",
+            "category" : "အထိမ်းအမှတ်နေ့များ"        
+        }
+    ],
+    "medium_hard": [
+        {
+            "question" : "ဧရာဝတီမြစ်၏ မြစ်ခွဲတစ်စင်းမှာ-",
+            "id" : 1,
+            "option" : [
+                "ဖျာပုံမြစ်",
+                "မြစ်သာမြစ်",
+                "ရွှေကျင်မြစ်",
+                "သောင်ရင်းမြစ်"
+            ],
+            "answer" : "ဖျာပုံမြစ်",
+            "explanation" : "ဧရာဝတီမြစ်တွင် မြစ်ခွဲ ၉ စင်းရှိပြီး မြစ်ကျဉ်း ၄ ခုရှိပါသည်။",
+            "category" : "မြစ်များ"        
+        },
+        {
+            "question" : "၂၀၁၄ UNESCO ကမ္ဘာ့အမွေအနှစ် စာရင်းဝင် အမွေအနှစ်မှာ-",
+            "id" : 2,
+            "option" : [
+                "ဝေသာလီ",
+                "ပုဂံ",
+                "ပျူရှေးဟောင်းမြို့များ",
+                "မိုင်မော"
+            ],
+            "answer" : "ပျူရှေးဟောင်းမြို့များ",
+            "explanation" : "UNESCO မှ ပျူရှေးဟောင်းမြို့များ ကို ကမ္ဘာ့အမွေအနှစ် စာရင်းဝင်အဖြစ် ၂၀၁၄ခုနှစ်တွင် သတ်မှတ်ခဲ့ပြီး  ၂၀၁၉ခုနှစ်တွင် ပုဂံ ကိုလည်း ထည့်သွင်းသတ်မှတ်ခဲ့ပါသည်။",
+            "category" : "မြို့များ"        
+        },
+        {
+            "question" : "Davis Cup သည် မည်သည့် အားကစားနည်းတွင်ပေးအပ်သော ဆုဖလားဖြစ်သနည်း။",
+            "id" : 3,
+            "option" : [
+                "Football",
+                "Swimming",
+                "Hockey",
+                "Tennis"
+            ],
+            "answer" : "Tennis",
+            "explanation" : "Davis ဖလားသည် နိုင်ငံတကာ အမျိုးသား tennis ပြိုင်ပွဲတွင်ပေးအပ်သော ဆုဖလားဖြစ်ပါသည်။",
+            "category" : "အားကစား"        
+        },
+        {
+            "question" : "ဘုရင်မ အုပ်ချုပ်သော နိုင်ငံမှာ-",
+            "id" : 4,
+            "option" : [
+                "Norway",
+                "Oman",
+                "Denmark",
+                "Belgium"
+            ],
+            "answer" : "Denmark",
+            "explanation" : "ဘုရင်မ Margrathe II သည် Denmark နိုင်ငံ၏ ဒုတိယမြောက် သက်တမ်းအကြာဆုံး ဧကရာဇ် အဖြစ် တာဝန်ထမ်းဝန်ထမ်းဆောင်ဆဲ ဖြစ်ပါသည်။",
+            "category" : "နိုင်ငံများ"        
+        },
+        {
+            "question" : "He's going to_____ university in September to study Shakespeare.",
+            "id" : 5,
+            "option" : [
+                "(no article)",
+                "a",
+                "an",
+                "the"
+            ],
+            "answer" : "(no article)",
+            "explanation" : "We don't use articles with some places like 'university' when we are talking about them being used for their normal purpose.",
+            "category" : "Grammar"        
+        },
+        {
+            "question" : "We've been waiting for ages!The food______be ready by now.",
+            "id" : 6,
+            "option" : [
+                "can't",
+                "may",
+                "must",
+                "might"
+            ],
+            "answer" : "must",
+            "explanation" : "We use modal verbs like must, may, might, could and can't to say how sure we are about something. We use 'must' when we feel very sure.",
+            "category" : "Grammar"        
+        },
+        {
+            "question" : "ကမ္ဘာ့ပထမဦးဆုံး အမျိုးသမီး သမ္မတမှာမည်သည့်နိုင်ငံမှဖြစ်သနည်း။",
+            "id" : 7,
+            "option" : [
+                "Israel",
+                "Argentina",
+                "China",
+                "Brazil"
+            ],
+            "answer" : "Argentina",
+            "explanation" : "ကမ္ဘာ့ပထမဦးဆုံး အမျိုးသမီး သမ္မတ၏အမည်မှာ Isabel Martinez de Peronဖြစ်ပြီး Argentina နိုင်ငံ၏ ၄၂ ယောက်မြောက်သမ္မတလည်းဖြစ်ပါသည်။",
+            "category" : "သမိုင်း"        
+        },
+        {
+            "question" : "အောက်ပါ elementများတွင် Noble gas မဟုတ်သောelement မှာ-",
+            "id" : 8,
+            "option" : [
+                "Helium",
+                "Chlorine",
+                "Argon",
+                "Krypton"
+            ],
+            "answer" : "Chlorine",
+            "explanation" : "Chlorine သည် Highly reactive ဖြစ်သည့်အတွက် Noble gasမဟုတ်သောelement တစ်ခု ဖြစ်ပါသည်။",
+            "category" : "ဓာတုဗေဒ"        
+        }
+        
+    ],
+    "hard": [
+        {
+            "question" : "World Cancer Day မှာ-",
+            "id" : 1,
+            "option" : [
+                "February 2",
+                "February 3",
+                "February 4",
+                "February 5"
+            ],
+            "answer" : "February 4",
+            "explanation" : "World Cancer Day ကို February လ 4ရက်နေ့အဖြစ် ကင်ဆာ‌ရောဂါကို နားလည်သဘောရန်၊ ကြိုတင်ကာကွယ်တားဆီးနိုင်ရန် နှင့် ကုသပျောက်ကင်းစေရန် ရည်ရွယ်၍ နိုင်ငံတကာမှ သတ်မှတ်ခဲ့ခြင်းဖြစ်ပါသည်။",
+            "category" : "အထိမ်းအမှတ်နေ့များ"        
+        },
+        {
+            "question" : "မြန်မာနိုင်ငံ၏ ပဉ္စမမြောက် သမ္မတမှာ-",
+            "id" : 2,
+            "option" : [
+                "ဦးစန်းယု",
+                "မန်းဝင်းမောင်",
+                "ဦးနေဝင်း",
+                "ဦးစန်းလွင်"
+            ],
+            "answer" : "ဦးစန်းယု",
+            "explanation" : "ဦးစန်းယုသည် ၁၉၈၁ခုနှစ် နိုဝင်ဘာ ၉ရက်မှ ၁၉၈၈ခုနှစ် ဇူလိုင် ၂၅ရက်အထိ မြန်မာနိုင်ငံ၏ ပဉ္စမမြောက် သမ္မတ အဖြစ် တာဝန်ထမ်းဆောင်ခဲ့ပါသည်။",
+            "category" : "သမိုင်း"        
+        },
+        {
+            "question" : "ပုပ်မှပေါ်၊________။",
+            "id" : 3,
+            "option" : [
+                "ဟုတ်မှကျော်",
+                "လုပ်မှမော်",
+                "လုပ်မှကျော်",
+                "ဟုတ်မှမော်"
+            ],
+            "answer" : "လုပ်မှကျော်",
+            "explanation" : "ပုပ်မှပေါ်၊ လုပ်မှကျော်။",
+            "category" : "ဆိုရိုးစကား"        
+        },
+        {
+            "question" : "\"အရသာမတူသော ပန်းသီးများ\" စာအုပ်ကို မည်သူရေးသားခဲ့သနည်း။",
+            "id" : 4,
+            "option" : [
+                "တင့်‌ဇော်",
+                "လူခါး",
+                "မနီတာ",
+                "ဖေမြင့်"
+            ],
+            "answer" : "တင့်‌ဇော်",
+            "explanation" : "စာရေးသူ တင့်ဇော်သည် ၂၀၁၇ခုနှစ်တွင် \"အရသာမတူသော ပန်းသီးများ\"စာအုပ်ဖြင့် အမျိုးသားစာပေဆုရရှိခဲ့ပါသည်။",
+            "category" : "စာပေ"        
+        },
+        {
+            "question" : "ROM အမျိုးအစားများမှာ-",
+            "id" : 5,
+            "option" : [
+                "PROM, EEEEEPROM, RROM",
+                "PROM, EPROM,EEPROM",
+                "PCROM, PDROM, PEROM",
+                "RPOM, RRROM, PPOM"
+            ],
+            "answer" : "PROM, EPROM,EEPROM",
+            "explanation" : "အဓိကအားဖြင့် ROM အမျိုးအစား ၅ ခုရှိပါသည်။၎င်းတို့မှာ ROM,PROM, EPROM,EEPROM နှင့် Flash memory တို့ဖြစ်ပါသည်။",
+            "category" : "IT"        
+        },
+        {
+            "question" : "ကမ္ဘာ့‌ဈေးအကြီးဆုံး ဓာတ်ပုံ၏ အမည်မှာ-",
+            "id" : 6,
+            "option" : [
+                "Rhein II",
+                "Phantom",
+                "Spiritual America",
+                "Dead Troops Talk"
+            ],
+            "answer" : "Phantom",
+            "explanation" : "Phantom အမည်ရှိ ဓာတ်ပုံသည် Austrilian ဓာတ်ပုံပညာရှင် Peter Lik ၏ ထင်ရှားသော အနုပညာလက်ရာဖြစ်ပြီး အမေရိကန် ဒေါ်လာ ၆၅ million တန်ဖိုးရှိပါသည်။",
+            "category" : "အနုပညာ"        
+        },
+        {
+            "question" : "Hawaiian ဘာသာစကားတွင်\"Ukulele\"ဆိုသော စကားလုံးသည် မည်သည့်အဓိပ္ပာယ်ရှိသနည်း။",
+            "id" : 7,
+            "option" : [
+                "Jumping flea",
+                "Small guitar",
+                "Island banjo",
+                "Small bug fiddle"
+            ],
+            "answer" : "Jumping flea",
+            "explanation" : "Ukulele သည် ကြိုးငယ်လေးကြိုးပါဝင်သော ဂီတာ အငယ်စား ဖြစ်ပြီးJumping-ခုန်နေသည်။ Flea-သန်း ဟုအဓိပ္ပာယ်ရှိပါသည်။",
+            "category" : "ဂီတ"        
+        },
+        {
+            "question" : "မြန်မာနိုင်ငံမှ တရုတ်နိုင်ငံသို့ သွားရောက်နိုင်သော လမ်းအမည်မှာ-",
+            "id" : 8,
+            "option" : [
+                "ကော့ကရိတ်လမ်း",
+                "တမူးလမ်း",
+                "တာပိန်လမ်း",
+                "အများတောင်ကြားလမ်း"
+            ],
+            "answer" : "တာပိန်လမ်း",
+            "explanation" : "မြန်မာနိုင်ငံမှ တရုတ်နိုင်ငံသို့ သွားရောက်နိုင်သော လမ်းမကြီးများ မှာ တာပိန်လမ်း၊ နမ်တင့်လမ်း၊ ရွှေလီလမ်း နှင့် တရုတ်-မြန်မာလမ်းမကြီး တို့ဖြစ်ကြသည်။",
+            "category" : "ပထဝီ"        
+        }
+    ]
+}

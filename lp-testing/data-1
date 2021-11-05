@@ -1,0 +1,166 @@
+create table lpquestions
+(qid int(11) not null auto_increment,
+category varchar(100),
+question varchar(300),
+op_one varchar(50),
+op_two varchar(50),
+op_three varchar(50),
+op_four varchar(50),
+answer varchar(50),
+expl_a varchar(1000),
+primary key(qid));
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('စကားပုံ','နွားရှေ့  ________။','လှည်းရောက်','ထွန်တုံး','လှည်းကျူး','ထွန်ကျူး','ထွန်ကျူး','ပြောဆိုဆုံးမသည့်အတိုင်း မလိုက်နာဘဲ ဆရာသမားများကို ပြန်လည်ပြောဆိုပြုမှု နေခြင်းကိုဆိုလိုသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('စကားပုံ','နွားရှေ့  ________။','လှည်းရောက်','ထွန်တုံး','လှည်းကျူး','ထွန်ကျူး','ထွန်ကျူး','ပြောဆိုဆုံးမသည့်အတိုင်း မလိုက်နာဘဲ ဆရာသမားများကို ပြန်လည်ပြောဆိုပြုမှု နေခြင်းကိုဆိုလိုသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ပထဝီ','ကမ္ဘာ့အမြင့်ဆုံးတောင် ဧဝရတ်တောင် သည် မည်သည့်နိုင်ငံ၌ တည်ရှိသနည်း။','Nepal','India','Bhutan','Pakistan','Nepal','ဧဝရတ်တောင်ထိပ်သည် နီပေါနှင့် တရုတ်နိုင်ငံ တိဘက်ဒေသတို့၏
+နယ်စပ်တွင်တည်ရှိသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('လူပုဂ္ဂိုလ်များ','Telephone ကိုတီထွင်သူတစ်ဦးမှာ-','Nikola Tesla','Leonado da Vinci','Alexandar Graham Bell','Henry Ford','Alexandar Graham Bell','Alexandar Graham Bellသည် အမေရိကန် အင်ဂျင်နီယာတစ်ဦးဖြစ်ပြီး ကမ္ဘာ့ပထမဦးဆုံး telephone ကို ၁၈၇၆တွင် တီထွင်နိုင်ခဲ့ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ဓာတုဗေဒ','သာမန်အခန်းအပူချိန်တွင် မည်သည့် element ကို အရည်အဖြစ် တွေ့ရသနည်း။','Mercury','Helium','Nitrogen','Oxygen','Mercury','Mercury ၏ အရည်ဆူအမှတ်မှာ ၂၀ ဒီဂရီ စီတီဂရိတ် နှင့်အထက်ဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အားကစား','အောက်ပါ အားကစားများတွင် မည်သည့် အားကစားပွဲ၏ ကျင်းပသည့်ကွင်းသည် 
+အကြီးဆုံးဖြစ်သနည်း။','Hockey ','Football ','Polo','Baseball','Polo','Polo အားကစားပွဲကျင်းပသည့် ကွင်းသည် အလျား ၂၇၅မီတာ၊ အနံ ၁၄၅မီတာရှိပြီး
+ဘောလုံးကွင်း ၅ကွင်းစာ အရွယ်အစားရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('သတင်းအချက်အလက်နှင့် နည်းပညာ','mac operating system ကိုမည်သည့် company မှ develop လုပ်ခဲ့သနည်း။','IBM','Apple','Microsoft','Samsung','Apple','mac operating system သည် Apple computerများ၏ operting systemဖြစ်ပြီး ၂၀၀၁ ခုနှစ်ကတည်းက developလုပ် ရောင်းချခဲ့ခြင်းဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ရူပဗေဒ','လေထုထဲရှိ စိုထိုင်းခြင်း(Humidity)နှင့် ရေခိုးရေငွေ့ပမာဏကိုတိုင်းတာသော ကိရိယာမှာ-','Hydrometer','Lactometer','Hygrometer','Barometer','Hygrometer','ပထမဆုံး hygrometer အကြမ်းထည်ကို ၁၄၈၀ ခုနှစ်တွင် ကမ္ဘာကျော် Polymath တစ်ဦးဖြစ်သည့် Leonado da Vinci  ကတီထွင်ခဲ့ပြီး
+ခေတ်သစ်ပုံစံ hygrometer ကို ၁၇၅၅ ခုနှစ်တွင် polymath Johann Heinrich Lambert ကတီထွင်ခဲ့ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('သီချင်းများ','ကမ္ဘာကျော် ဇာတ်ကားဖြစ်သည့် Titanic ၏ဇာတ်ဝင်တေးသီချင်းဖြစ်သော "My Heart Will Go On"
+ကို ရေးသားခဲ့သည့်တေးရေးဆရာမှာ','Will Jennings','Steve Winwood','Eric Clapton','Jimmy Buffett','Will Jennings','Will Jennings သည် အမေရီကန် သီချင်းရေးဆရာဖြစ်ပြီး
+"Tears in Heaven" နှင့် "My Heart Will Go On"စသော သီချင်းများဖြင့် ကျော်ကြားသူတစ်ဦးဖြစ်သည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အဆိုအမိန့်များ','"I came, I saw, I conquered" သည် မည်သည့်ပုဂ္ဂိုလ်၏ အဆိုအမိန့်ဖြစ်သနည်း။','Alexandar the Great','Adolf Hitler','Mao Zedong','Julius Caesar','Julius Caesar','Julius Caesar သည် ကမ္ဘာကျော် ရောမ အာဏာရှင်၊ စစ်ဗိုလ်ချုပ်ကြီးတစ်ဦးဖြစ်ပြီး ရောမအင်ပါယာ ကြီးမားလာမှုကို ဦးဆောင်ခဲ့သူဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ရုပ်ရှင်သရုပ်ဆောင်များ','ရုပ်ရှင်မင်းသမီး ဒေစီကျော်ဝင်း အကောင်းဆုံးအမျိုးသမီးဇာတ်ဆောင်ဆုရရှိသော ဇာတ်ကားမှာ-','ကကြီးရေက','အားနွဲ့သူပါရှင်','ပန်းသီတဲ့ကြိုး','တစ်ခါကတစ်ဘဝ','အားနွဲ့သူပါရှင်','နိုင်ငံကျော်ရုပ်ရှင်မင်းသမီး ဒေစီကျော်ဝင်း သည် ၁၉၇၁ခုနှစ်တွင် "အားနွဲ့သူပါရှင်" ရုပ်ရှင်ဇာတ်ကားဖြင့် အကောင်းဆုံးအမျိုးသမီးဇာတ်ဆောင်ဆုရရှိခဲ့ပါသည်။');
+//////////////////////////////////////////////////
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ကဗျာများ','တောင်သူကြီး ကဗျာကို မည်သည့်ခေတ်တွင်ရေးဖွဲ့ခဲ့သနည်း။','ကုန်းဘောင်ခေတ်','ညောင်ရမ်းခေတ်','အင်းဝခေတ်','ပုဂံခေတ်','ကုန်းဘောင်ခေတ်','တောင်သူကြီး ကဗျာကို ကုန်းဘောင်ခေတ်တွင် ဖိုးသူတော်ဦးမင်း ရေးဖွဲ့ခဲ့ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('သတင်းအချက်အလက်နှင့် နည်းပညာ','.gif  ၏ မည်သည့် file၏ extension ဖြစ်သနည်း။','Video file','Image file','Audio file','Word file','Image file','.jpg, .png, .tif နှင့် .gif စသော extension များသည် image file extensionများဖြစ်ကြသည်။
+.jpg သည် အသုံးများသော extensionတစ်ခုဖြစ်သည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အာကာသ','ကျွန်ုပ်တို့၏ Milky Way galaxy သည် မည်သည့် ပုံသဏ္ဌာန်ရှိသနည်း။','Circular','Elliptical','Spiral','No Shape','Spiral','Milky Way galaxyသည် spiral (ခရုပတ်ရစ်ခွေသော) ပုံသဏ္ဌာန်ရှိပြီး ကြယ်ပေါင်း ၂၀၀ ဘီလီယံမှ ၄၀၀ဘီလီယံ ထိရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('သင်္ချာ','ဆိတ်နှင့် သိုး ၃၆ကောင်တွင် သိုးသည် ဆိတ်ထက် (၅)ဆပိုများ၏။ ဆိတ်ကောင်ရေမှာ','၅ကောင်','၆ကောင်','၇ကောင်','၈ကောင်','၆ကောင်','ဆိတ်+ သိုး= ၃၆ကောင်၊ 
+သိုး=၅ xဆိတ် ၊ 
+၆xဆိတ်= ၃၆ကောင်၊
+ဆိတ်= ၆ကောင်');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ကျန်းမာရေး','အရေပြားရောဂါ တစ်ခုဖြစ်သော ရေယုန်သည် မည်သည့်အရာကြောင့် ဖြစ်ပွားရသနည်း။','Dryness','Bacteria','Scratching','Viruses','Viruses','ရေယုန်(shingles) သို့ herpes zoster သည် အာရုံကြောဆိုင်ရာ အရေပြားရောဂါတစ်ခုဖြစ်ပြီး
+varicella-zoster virus ကြောင့်ဖြစ်ပွားသော ကူးစက်ရောဂါ တစ်မျိုးဖြစ်သည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ပန်းချီ','The Starry Night ပန်းချီကားကို ရေးဆွဲခဲ့သော ကမ္ဘာကျော် ပန်းချီပညာရှင် မှာ-','Pablo Picasso','Leonardo da Vinci','Vincent van Gogh','Sandro Botticelli','Vincent van Gogh','The Starry Night ပန်းချီကား သည် ဆီဆေး ပန်းချီကားတစ်ခုဖြစ်ပြီး အတိုင်းအတာ 
+74 cm x 92 cm ရှိပါသည်။ ၁၈၈၉ ဇွန်လတွင် ဖန်တီးခဲ့ခြင်းဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ဇီဝဗေဒ','မှိုပင်များသည် မည်သို့ မျိုးပွားသနည်း။','Small filaments under the ground','Splitting into two','Spores','Seeds','Spores','မှိုပင်များ သည် ၎င်းတို့၏ မျိုးမှုန်(Spores) များကို ထုတ်လွတ်ခြင်းဖြင့် မျိုးပွားကြပါသည်။ မှိုတက်ခြင်းဖြစ်စဉ် တစ်ခု
+တွင် မျိုးမှုန် ပေါင်း ဘီလီယံချီ ထုတ်လုပ် ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('စစ်ပွဲများ','ဒုတိယ အင်္ဂလိပ်-မြန်မာ စစ်ပွဲ ဖြစ်ပွားရသည့် ပြဿနာမှာ-','ရှင်မဖြူကျွန်း အရေးအခင်း','ကုန်ပို့တင်ဆောင်မှု','ရခိုင်နယ်ခြား ပြဿနာ','သစ်ခိုးထုတ်မှု','ကုန်ပို့တင်ဆောင်မှု','သင်္ဘောကပ္ပတိန် ရှက်ပက်နှင့် လူးဝစ်အားလူသတ်မှု၊ သင်္ဘောနှစ်စီးဖြင့် ကုန်ပို့ဆောင်မှု၊ တရားစွဲဒဏ်ရိုက်ရာမှ စတင်သည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ပထဝီ','မြန်မာနိုင်ငံ၏အရှေ့ဘက် အစွန်ဆုံး မြို့မှာ-','မိုင်းယောင်းမြို့','ပန်နန်းဒင်မြို့','ပင်လောင်းမြို့','ကျိုင်းတောင်းမြို့','မိုင်းယောင်းမြို့','မိုင်းယောင်းမြို့ သည် အရှေ့ဘက် အစွန်ဆုံး မြို့၊
+မောင်းတောမြို့ သည် အနောက်ဘက် အစွန်ဆုံးမြို့၊
+ကော့သောင်းမြို့သည် တောင်ဘက်အစွန်ဆုံးမြို့၊
+ပန်နန်းဒင်မြို့ သည် မြောက်ဘက် အစွန်ဆုံးမြို့။');
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ဆုတံဆိပ်များ','နိုဘယ်ဆု(၆)မျိုးတွင် မပါဝင်သော ဆုမှာ-','စာပေဆု','ရူပဗေဒထူးချွန်ဆု','စီပွားရေးသိပ္ပံထူးချွန်ဆု','သင်္ချာ ထူးချွန်ဆု','သင်္ချာ ထူးချွန်ဆု','နိုဘယ်ဆုခြောက်မျိုးမှာ ဆေးဝါးထူးချွန်ဆု၊ ဓာတုဗေဒထူးချွန်ဆု၊ စာပေဆု၊ ငြိမ်းချမ်းရေးဆု၊ ရူပဗေဒထူးချွန်ဆု နှင့် စီးပွားရေးသိပ္ပံထူးချွန်ဆုတို့ ဖြစ်ကြသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ခေတ်ကာလများ','ကမ္ဘာ၏ မည်သည့် အချိန်ကာလ တွင် လူသားများနှင့် ဒိုင်နိုဆောများ အတူနေထိုင်ခဲ့ကြသနည်း။','The Jurassic Period','The Cretaceous Period','The Iron Age','Never','Never','ကျောက်ဖြစ်ရုပ်ကြွင်းမှတ်တမ်းများနှင့် ကာဗွန် Dating မှတ်တမ်းများအရ လူသားများနှင့် ဒိုင်နိုဆောများ သည် မည်သည့်ကာလတွင်မှ အတူနေထိုင်ခဲ့ခြင်းမရှိပါ။
+မိကျောင်းများသာလျှင် လူသားများနှင့်ရော ဒိုင်နိုဆောများနှင့်ပါ နေထိုင်ခဲ့ကြသည်ဟု သိပ္ပံပညာရှင်များက မှတ်ယူထားကြပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('သတင်းအချက်အလက်နှင့် နည်းပညာ','အောက်ပါ တို့မှ Operating System မဟုတ်သည့် အရာကို ရွေးပါ။','DOS','Mac','C','Linux','C','C သည် programming language တစ်ခုဖြစ်ပါသည်။
+အခြားသော programming language များမှာ C++, Java, C# ,Python ,Fortran စသဖြင့်
+programming language ပေါင်း ၂၅၀ ဝန်းကျင် ရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ကြယ်များ','ကြယ်များ၏ အရောင်အသွေး ကွဲပြားမှုများသည် ကြယ်၏မည်သည့်အရာ ပြောင်းလဲမှုကြောင့်ဖြစ်သနည်း။','Temperature','Pressure2','Density','Radiation','Temperature','ကြယ်များ၏ အရောင်များသည် ၎င်းတို့၏ အပူချိန်ကို ဖော်ပြပါသည်။
+အပူဆုံးကြယ်များသည် အပြာ သို့ ပြာ-ဖြူ အရောင်ရှိပြီး 
+အအေးဆုံး ကြယ်များသည် အနီရောင် ရှိကြပါသည်။ ');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အားကစား','သာမန် ဂေါက်သီးတစ်လုံး၏ မျက်နှာပြင်ပေါ်တွင် အချိုင့်ငယ်(dimples)ပေါင်းမည်မျှရှိသနည်း။','၂၅၇','၄၅၃','၄၁၂','၃၃၆','၃၃၆','သာမန် ဂေါက်သီးတစ်လုံး၏ မျက်နှာပြင်ပေါ်တွင် အရွယ်တူချိုင့်ခွက် ပေါင်း ၃၃၆ ခုရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အတိုကောက်စကားလုံးများ','ဆေးပညာ ၏ အရေးပေါ် လုပ်ရိုးလုပ်စဉ် ဖြစ်သော  CPR ၏အနက်အဓိပ္ပာယ်မှာ-','Cadioprimary resuscitation','Chestpulmonary resuscitation','Cadioprimary rescuse','Cadiopulmonary resuscitation','Cadiopulmonary resuscitation','Cadiopulmonary resuscitation(CPR) သည် ဆေးပညာနှင့်ဆိုင်သော အရေးပေါ်လုပ်လုပ်ရိုးလုပ်စဉ်နည်းလမ်း တစ်ခုဖြစ်ပါသည်။
+နှလုံးနှင့်ဆိုင်သော ရပ်တန့်မှုဖြစ်သွားသည့်သူအား ပုံမှန်သွေးလည်ပတ်မှုနှင့် အသက်ရှူမှုများ ပြန်လည်ရရှိစေသော ကုထုံးဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ပထဝီ','အောက်ပါကျွန်းကြီးများတွင် မည်သည့်ကျွန်းသည် အကြီးဆုံးဖြစ်သနည်း။','Sumatra','Borneo','Greenland','Victoria Island','Greenland','Greenland သည် Kingdom of Denmark ၏ ကိုယ်ပိုင်အုပ်ချုပ်ခွင့်ရှိသော ကျွန်းကြီးဖြစ်ပြီး ၂,၁၆၆,၀၈၆ စတုရန်းကီလိုမီတာ ဧရိယာရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ဝတ္ထုများ','Sherlock Holmes ဝတ္ထုကို ရေးသားခဲ့သော စာရေးဆရာ အမည်မှာ','Arthur Conan Doyale','H. G. Wells','Charles Dickens','Mark Twain','Arthur Conan Doyale','Sherlock Holmes ဝတ္ထုကိုဗြိတိန် စာရေးဆရာ Sir Arthur Conan Doyale ကရေးသားခဲ့ပြီး ၁၈၈၇ခုနှစ်ဝန်းကျင်တွင် "A Study in Scarlet"ဖြင့် စတင်မိတ်ဆက်ခဲ့ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အနုပညာ','Ballet အက သည် မည်သည့်နိုင်ငံ ၏ အကဖြစ်သနည်း။','Argentina','Brazil','Spain','Italy','Italy','Ballet အက ၏ဇစ်မြစ်မှာ Italy(အီတလီ)နိုင်ငံ မှဖြစ်ပြီး ၁၅ ရာစုတွင် ပေါ်ပေါက်ခဲ့ပါသည်။ 
+ထို့နောက်  ပြင်သစ် နှင့် ရုရှား နိုင်ငံများသို့ ပျံ့နှံ့လာခဲ့ပါသည်။');
+////////////////////////////////////////////////////////////////////////////////////////
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('တီထွင်မှုများ','ကမ္ဘာ့အကြီးမားဆုံးသော Online Shopping Website များမှ တစ်ခုဖြစ်သည့် Amazon ၏ Founder မှာ','Carlos Slim','Jeff Bezos','Warren Buffett','Tim Cook','Jeff Bezos','Jeff Bezos သည် အမေရိကန် နည်းပညာစွန့်ဦးတီထွင်သူ တစ်ဦးဖြစ်ပြီး လက်ရှိ ပိုင်ဆိုင်မှု ဒေါ်လာ၁၅၂ ဘီလီယံ ဖြင့် ကမ္ဘာ့အချမ်းသာဆုံး ပုဂ္ဂိုလ် လည်းဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('တူရိယာများ','ကမ္ဘာ့စျေးအကြီးဆုံးသော တူရိယာသည် မည့်သည့် တူရိယာ အမျိုးအစားဖြစ်သနည်း။','Violin','Piano','Guitar','Cello','Violin','The Vieuxtemps Guarneri အမည်ရှိ တယော သည် ဒေါ်လာ ၁၆ မီလီယံ တန်ဖိုးရှိပြီး ၁၉ရာစုတွင် Belgian လူမျိုး ကမ္ဘာကျော်တယော ပညာရှင်
+Henri Vieuxtemps ကပိုင်ဆိုင်ခဲ့ပါသည်။ ယခုထိတိုင် အသံပိုင်းဆိုင်ရာတွင် အပြစ်အနာအဆာ ကင်းမဲ့သော တူရိယာဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('လူပုဂ္ဂိုလ်များ','ကမ္ဘာကျော်ပုံပြင် ယုန်နှင့်လိပ် (The Tortoise and the Hare) ပုံပြင်ကို ရေးသားခဲ့သော 
+လူပုဂ္ဂိုလ်မှာ-','Plato','Heisod','Aesop','Jean de La Fontaine','Aesop','Aesop သည် ဂရိ ဒဏ္ဍာရီပုံပြင် ဖန်တီးသူ တစ်ဦးဖြစ်ပြီး  "The Lion and the Mouse", "The Fox and the Grapes",
+"The old man and his sons"စသော ကမ္ဘာကျော် ပုံပြင်များကို ရေးသားခဲ့သူဖြစ်သည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ရူပဗေဒ','လေ၏ force နှင့် velocity ကို တိုင်းတာသော ကိရိယာမှာ-','Ammeter','Anemometer','Altimeter','Audiometer','Anemometer','Anemometer သည် လေ၏ အရှိန်ကို တိုင်းတာသောကိရိယာဖြစ်ပြီး မိုးလေဝသ ခန့်မှန်းသော နေရာတွင်သုံးလေ့ရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('သိပ္ပံ','DNA molecule တစ်ခုသည် မည်သည့်အရာနဲ့ ပုံသဏ္ဌာန် ဆင်တူသနည်း။','A cloverleaf','A cross','A twisted ladder','A figure eight','A twisted ladder','DNA molecule သည် double helix structure ရှိပြီး James Watson နှင့် Francis Crick တို့မှ ၁၉၅၀ ဝန်းကျင်များတွင် ရှာဖွေတွေ့ရှိခဲ့ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('မိုးလေဝသ','တို်ငဖုန်း(Typhoon) မုန်တိုင်းများသည် မည်သည့် နေရာတွင် ဖြစ်ပွားလေ့ရှိသနည်း။','North Western Pacific Ocean','Indian Ocean','Artic Ocean','Eastern Pacific Ocean','North Western Pacific Ocean','Typhoon မုန်တိုင်းများသည် North Western Pacific Oceanတွင် မကြာခဏ ဖြစ်ပေါ်တတ်ပြီး
+Hurricane မုန်တိုင်များသည် Eastern Pacific Oceanတွင် ဖြစ်ပေါ်လေ့ရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အဆိုအမိန့်များ','"I love walking in the rain cause no one see me crying."သည် 
+မည်သူ့၏ အဆိုအမိန့်ဖြစ်သနည်း။','Charlie Chaplin','Jackie Chan','Robin Williams','Jim Carrey','Charlie Chaplin','ကမ္ဘာကျော် English ဟာသသရုပ်ဆောင် Charlie Chaplin သည်
+အသံတိတ် ဟာသပညာ ကို မြင့်တင်ပေးခဲ့သူဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အခေါ်အဝေါ်များ','"MANGERY"ဆိုသော စကားလုံးကို အစီအစဉ်ကျအောင်ပြန်စီလျှင် ရလာသောစကားလုံး အဓိပ္ပာယ်သည်-','သမုဒ္ဒရာ','မြို့','နိုင်ငံ','တိရစ္ဆာန်','နိုင်ငံ','ရလာသောစကားလုံးသည် အနောက် ဥရောပတိုက် နိုင်ငံတစ်နိုင်ငံဖြစ်သော Germany နိုင်ငံဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ဘာသာစကားများ','ဒုတိယမြောက် လူပြောအများဆုံး ဘာသာစကားမှာ-','Hindi','Chinese','English','Spainish','Spainish','Spainish စပိန်ဘာသာစကားသည်  ဒုတိယမြောက် လူပြောအများဆုံး ဘာသာစကားဖြစ်ပြီး
+Mandarin Chinese ဘာသာစကားသည် လူပြောအများဆုံး ဘာသာစကားဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('#cate','#que','#op1','#op2','#op3','#op4','#ans','#exp');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('#cate','#que','#op1','#op2','#op3','#op4','#ans','#exp');
+
+
+
+select * from lpquestions;

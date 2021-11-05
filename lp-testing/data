@@ -1,0 +1,174 @@
+Easy
+///////////////////
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ကမ္ဘာ့တိုက်ကြီးများ','ကမ္ဘာ့အကြီးဆုံးတိုက်မှာ မည်သည့်တိုက်ဖြစ်သနည်း။','အာရှတိုက်','မြောက်အမေရိကတိုက်','အာဖရိကတိုက်','ဥရောပတိုက်','အာရှတိုက်','အာရှတိုက်သည် လူဦးရေအများဆုံးနှင့် အကြီးဆုံး တိုက်ဖြစ်ပါသည်။ကမ္ဘာ့ အရှေ့ခြမ်းတွင်တည်ရှိပြီး နိုင်ငံပေါင်း ၄၈ နိုင်ငံဖြင့် ဖွဲ့စည်းထားပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('သင်္ချာ','လွန်ခဲ့သော သုံးနှစ်က မောင်ဘသည် မောင်မြထက်
+အသက်(၅)နှစ်ပိုကြီးသည်။ ယခုလက်ရှိအချိန်တွင် မောင်ဘနှင့် မောင်မြသည်
+အသက်မည်မျှပိုကြီးသနည်း။','၃နှစ်','၅နှစ်','၈နှစ်','၁၀နှစ်','၅နှစ်','လွန်ခဲ့သော ၃ နှစ်တွင် မောင်ဘသည် မောင်မြထက်
+အသက်(၅)နှစ်ပိုကြီးခဲ့လျှင် ယခုအချိန်တွင်လည်း အသက်ကွာခြားမှုမှာ (၅)နှစ်ပင်ဖြစ်သည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('တူရိယာများ','သာမန် Guitar(ဂီတာ)တစ်လုံးတွင် ကြိုးမည်မျှပါဝင်သနည်း။','၅ကြိုး','၆ကြိုး','၇ကြိုး','၈ကြိုး','၆ကြိုး','စံပြဂီတာ တစ်လုံးတွင် ကြိုး ၆ ကြိုးပါဝင်ပြီး ၄၊ ၇၊ ၈၊ ၉၊ ၁၀၊ ၁၁၊ ၁၂၊ ၁၃ ကနေ ၁၈ကြိုးအထိ တပ်ဆင်အသုံးပြုနိုင်သော ဂီတာများလည်းရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('တီထွင်မှုများ','Penicillin(ပင်နီဆီလင်)ဆေးကို ရှာဖွေတွေ့ရှိသူမှာ-','Edward Jenner','Robert Koch','Alexander Fleming','Ernst Chain','Alexander Fleming','Penicillin ကဲ့သို့ ပထမဆုံး ပဋိဇီဝ ဆေးကို Londonမြို့ St.Mary's ဆေးရုံ၏ ဗက်တီးရီးယားဗေဒ ပါမောက္ခ Alexandar Fleming ကရှာဖွေတွေ့ရှိခဲ့ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အတိုင်းအတာများ','၁ ဖာလုံတွင် မည်မျှ သံကြိုးရှိသနည်း။','၉','၁၀','၁၁','၁၂','၁၀','၂၂ လက်မ<br>		၁ သံကြိုး
+၁၀သံကြိုး  	၁ ဖာလုံ<br>
+၈ဖာလုံ		၁ မိုင်');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ကာတွန်းဇာတ်ကောင်များ','Donal Duck ဇာတ်ကောင်ကို မည်သည့် ထုတ်လုပ်ရေးကုမ္ပဏီမှ ဖန်တီးခဲ့သနည်း။',
+'Warner Bros.','DreamWorks Pictures','Universal Pictures','Walt Disney Pictures','Walt Disney Pictures','Donal Duck ကာတွန်းဇာတ်ကောင်ကို 1934ခုနှစ်တွင် Walt Disney production မှ ဖန်တီးခဲ့ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('နိုင်ငံများ','ဘရာဇီးလ်(Brazil)နိုင်ငံသည် မည်သည့် တိုက်တွင် တည်ရှိသနည်း။',
+'အာရှတိုက်','မြောက်အမေရိကတိုက်','အာဖရိကတိုက်','တောင်အမေရိကတိုက်','တောင်အမေရိကတိုက်','ဘရာဇီးလ် နိုင်ငံသည် တောင်အမေရိကတိုက်တွင် အကြီးဆုံးနိုင်ငံဖြစ်ပြီး ကမ္ဘာ့အကြီးဆုံးနိုင်ငံ အဆင့် ၅  ရရှိထားပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ရူပ‌ဗေဒ','အောက်ပါတို့မှ Scalar quantityကို ရွေးချယ်ပါ။',
+'Velocity','Displacement','Speed','Force','Speed','Speed နှင့် Temperature တို့သည်ထင်ရှားသော scalar quatityများဖြစ်ကြသည်။');
+
+
+
+
+Easy-Medium
+///////////////////
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('စာချုပ်များ','မည်သည့်ခုနှစ်တွင် ပင်လုံစာချုပ် ချုပ်ဆိုခဲ့သနည်း။','၁၉၄၅','၁၉၄၆','၁၉၄၇','၁၉၄၈','၁၉၄၇','၁၉၄၇ခုနှစ် ဖေဖော်ဝါရီလ ၁၂ရက်တွင် ရှမ်းပြည်နယ်တောင်ပိုင်း ပင်လုံမြို့၌ တိုင်းရင်းသားလူမျိုးများအားလုံး သွေးစည်းညီညွတ်ခြင်းအထိမ်းအမှတ်အဖြစ်ချုပ်ဆိုခဲ့သော စာချုပ်ဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ဘာသာရပ်များ','အာကာသဆိုင်ရာ အရာဝတ္ထုများနှင့် ဖြစ်စဉ်များကိုလေ့လာသော ဘာသာရပ်မှာ-',
+'Astronomy','Autonomy','Aeronomy','Agronomy','Astronomy','Astronomy(နက္ခတ္တဗေဒ)သည် Cosmic background radiation ကဲ့သို့ ကမ္ဘာ့လေထု၏အပြင်ဘက် အာကာသဖြစ်စဉ်များ နှင့် ကြယ်များ၊ဂြိုဟ်များ၊ကြယ်တံခွန်များ နှင့်နဂါးငွေ့တန်းများ ကိုလေ့လာသောဘာသာရပ်ဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အဆောက်အဦးများ','ကမ္ဘာ့အမြင့်ဆုံး အဆောက်အဦးမှာ-',
+'Shanghai Tower','One World Trade Center','Makkah Clock Tower','Burj Khalifa','Burj Khalifa',
+'Burj Khalifa သည် အာရပ်စော်ဘွားများပြည်ထောင်စု တွင်တည်ရှိသော မိုးမျှော်တိုက် ဖြစ်ပြီး ၂၀၁၀တွင်ဖွင့်လှစ်ကာ အမြင့် ၈၂၉.၈ မီတာရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('Companyများ','Ford Motor company မှာ မည့်သည့်နိုင်ငံမှ ဖြစ်သနည်း။','Korea','Japan','USA','Germany','USA','Ford Motor company သည် အမေရိကန် မော်တော်ကား ကုမ္ပဏီဖြစ်ပြီး ၁၉၀၃ခုနှစ် ဇွန်လ ၁၆ရက်နေ့တွင် Henry Fordမှ တည်ထောင်ခဲ့ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('C.ဂြိုဟ်များ','ကျွန်ုပ်တို့ နေအဖွဲ့အစည်းတွင် ဂြိုဟ်မည်မျှ ရှိသနည်း။','၉','၈','၇','၁၀','၈','ကျွန်ုပ်တို့ နေအဖွဲ့အစည်းတွင် Mercury, Venus, Earth, Mars Jupiter, Saturn, Uranus နှင့် Neptune ဟူ၍ ဂြိုဟ်ကြီး ၈လုံး လည်ပတ်နေပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အတိုကောက်စကားလုံးများ','UFO ၏ အရှည်ကောက်မှာ-','Unknown Flighting Object','Unidentified Flying Object','Unidentified Finding Operator','Unknown Files Organizer','Unidentified Flying Object',
+'Unidentified Flying Object ဆိုသည်မှာ ရုတ်တရက်ကြည့်ရုံနှင့် ခွဲခြားသိမြင်၍မရနိုင်သော လေကြောင်းဖြစ်စဉ် အဖြစ်လူသိများသော အသုံးအနှုန်းဖြစ်ပါသည်။  အမည်မသိပျံသန်းနေသောအရာ ပန်းကန်ပြားပျံ ဟုလည်းလူသုံးများပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('လူပုဂ္ဂိုလ်များ','"First Man"ရုပ်ရှင်ဇာတ်ကားသည် မည်သည့် ပုဂ္ဂိုလ်အကြောင်း
+မှတ်တမ်းတင်သည့် ဇာတ်ကားဖြစ်သနည်း။','Bill Clinton','Barack Obama','Alfred Nobel','Neil Armstrong','Neil Armstrong',
+'First Man ရုပ်ရှင်ဇာတ်ကားသည် အာကာသယာဉ်မှူး Neil Armstrong ၏ဘဝအကြောင်းနှင့် သူ၏ကမ္ဘာကျော် mission လပေါ်တွင် လမ်းလျှောက်ခြင်းအကြောင်း ရိုက်ကူးထားသော Drama/Sci-fi အမျိုးအစား ဇာတ်ကားဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အခေါ်အဝေါ်များ','အစာအိမ်ရောဂါ၏ အမည်မှာ-','Diabetes','Typhoid','Gastric','Diarrhea','Gastric','စိတ်ဖိစီးမှုများခြင်း၊ ပုံမမှန်သော စားသောက်နည်းစနစ် များသည် အစာအိမ်ရောဂါဖြစ်စေပါသည်။');
+
+
+Medium
+///////////////////
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('IT','မည်သည့် Programming Language သည် Applet Program များကို
+ဖန်တီးရာတွင် အသုံးပြုသနည်း။','COBOL','C Language','BASIC','Java','Java','Applet program သည် web browser များတွင် embedded ပြုလုပ်နိုင်သော Java program တစ်မျိုးဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('တည်ထောင်သူများ','Elon Musk နှင့် မသက်ဆိုင်သော အရာမှာ-','SpaceX','Paypal',
+'Amazon','Tesla','Amazon','စွန့်ဦးတီထွင်သူ Elon Musk သည် SpaceX, Paypal , Tesla ကဲ့သို့ ကမ္ဘာကျော် ကုမ္ပဏီများတွင် Founder,co-founder, chairman စသည်ဖြင့်တာဝန်ထမ်းဆောင်လျက်ရှိပြီး
+Neuralink, The Boring Company, Zip2, OpenAI, SolarCity အဖွဲ့အစည်းများတွင်လည်း သက်ဆိုင်ရာ ရာထူးများကို ပိုင်ဆိုင်ထားပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အနုပညာ','Ed Sheeran ရေးသားခဲ့သော သီချင်းတစ်ပုဒ်မှာ-','Love Story','Supermarket Flowers','Story of My Life','We own the night','Supermarket Flowers','"Supermarket flowers"သီချင်းသည် အမေရိကန် တေးရေး တေးဆို Ed Sheeran ၏ သုံးခုမြောက် albumဖြစ်သော "divide ÷"၂၀၁၇ တွင်ပါဝင်သော သီချင်းတစ်ပုဒ်ဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ရုပ်ရှင်ကားများ','IMDb rating အမြင့်ဆုံးရရှိထားသော ဇာတ်ကားမှာ-',
+'Titanic','The Shawshank Redemption','Avatar','Avengers:Endgame','The Shawshank Redemption','The Shawshank Redemption ဇတ်ကားသည် အမေရိကန် Drama ဇာတ်ကားတစ်ကားဖြစ်ပါသည်။ ၁၉၉၄ ခုနှစ်တွင် ထွက်ရှိခဲ့ပြီး IMDb rating 9.3/10 ရရှိထားသော ဇာတ်ကားကောင်းတစ်ကားဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အားကစား','ဘောလုံးကွင်းရှိ ဂိုးတိုင်(Goalpost)၏ အမြင့်မှာ-','၇ပေခွဲ','၈ပေ','၇ပေ','၈ပေခွဲ','၈ပေ','ဘောလုံးကွင်းရှိ ဂိုးတိုင်(Goalpost)တစ်ခု ၏ အမြင့်မှာ ၈ပေရှိပြီး အနံမှာ ၂၄ပေရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အိုလံပစ်(Olympic)','2008 Summer Olympic ကိုမည်သည့်မြို့တွင် 
+ကျင်းပခဲ့သနည်း။','Beijing','Rio de Janeiro','London','Tokyo','Beijing','2008 Summer Olympic ကို တရုတ်နိုင်ငံ Beijing မြို့တွင်ကျင်းပခဲ့ပြီး နိုင်ငံပေါင်း ၂၀၄နိုင်ငံ ပါဝင်ယှဉ်ပြိုင်ခဲ့ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('သမိုင်း','အမေရိကန်စစ်တပ် ပါဝင်ပက်သက်သော စစ်ပွဲများတွင်
+ဒုတိယမြောက် အရှည်ကြာဆုံး စစ်ပွဲမှာ-','Iraq War','American Revolution War','Vietnam War','War in Afghanistan','Vietnam War','Vietnam Warသည် ဒုတိယမြောက်အရှည်ကြာဆုံးစစ်ပွဲဖြစ်ပြီး ၁၉၅၅/၁၁ မှ ၁၉၇၃/၄ အထိကြာမြင့်ခဲ့ပါသည်။ ပထမမြောက် အရှည်ကြာဆုံးမှာ War in Afghanistan ဖြစ်ပြီး ၂၀၀၁/၁၀ မှ ယနေ့တိုင် ဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အထိမ်းအမှတ်နေ့များ','အမေရိက နိုင်ငံ၏ လွတ်လပ်ရေးနေ့မှာ-','March 3','July 9','July 4','August 6','July 4','လွတ်လပ်ရေးနေ့ကြေညာခြင်းကို ၁၇၇၆ခုနှစ် July ၄ ရက်နေ့တွင် စတင်သတ်မှတ်ခဲ့ပါသည်။');
+
+
+
+
+Medium-Hard
+///////////////////
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('မြစ်များ','ဧရာဝတီမြစ်၏ မြစ်ခွဲတစ်စင်းမှာ-','ဖျာပုံမြစ်','မြစ်သာမြစ်','ရွှေကျင်မြစ်','သောင်ရင်းမြစ်','ဖျာပုံမြစ်','ဧရာဝတီမြစ်တွင် မြစ်ခွဲ ၉ စင်းရှိပြီး မြစ်ကျဉ်း ၄ ခုရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('မြို့များ','၂၀၁၄ UNESCO ကမ္ဘာ့အမွေအနှစ် စာရင်းဝင် အမွေအနှစ်မှာ-','ဝေသာလီ','ပုဂံ','ပျူရှေးဟောင်းမြို့များ','မိုင်မော','ပျူရှေးဟောင်းမြို့များ','UNESCO မှ ပျူရှေးဟောင်းမြို့များ ကို ကမ္ဘာ့အမွေအနှစ် စာရင်းဝင်အဖြစ် ၂၀၁၄ခုနှစ်တွင် သတ်မှတ်ခဲ့ပြီး  ၂၀၁၉ခုနှစ်တွင် ပုဂံ ကိုလည်း ထည့်သွင်းသတ်မှတ်ခဲ့ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အားကစား','Davis Cup သည် မည်သည့် အားကစားနည်းတွင်
+ပေးအပ်သော ဆုဖလားဖြစ်သနည်း။','Football','Swimming','Hockey','Tennis','Tennis','Davis ဖလားသည် နိုင်ငံတကာ အမျိုးသား tennis ပြိုင်ပွဲတွင်ပေးအပ်သော ဆုဖလားဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('နိုင်ငံများ','ဘုရင်မ အုပ်ချုပ်သော နိုင်ငံမှာ-','Norway','Oman','Denmark','Belgium','Denmark','ဘုရင်မ Margrathe II သည် Denmark နိုင်ငံ၏ ဒုတိယမြောက် သက်တမ်းအကြာဆုံး ဧကရာဇ် အဖြစ် တာဝန်ထမ်းဝန်ထမ်းဆောင်ဆဲ ဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('Grammar',"He's going to_____ university in September to study Shakespeare.",
+'(no article)','a','an','the','(no article)',"We don't use articles with some places like 'university' when we are talking about them being used for their normal purpose.");
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('Grammar',"We've been waiting for ages!The food______be ready by now.","can't",'may','must','might','must',
+"We use modal verbs like must, may, might, could and can't to say how sure we are about something. We use 'must' when we feel very sure.");
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('သမ္မတများ','ကမ္ဘာ့ပထမဦးဆုံး အမျိုးသမီး သမ္မတမှာ
+မည်သည့်နိုင်ငံမှဖြစ်သနည်း။','Israel','Argentina','China','Brazil','Argentina','ကမ္ဘာ့ပထမဦးဆုံး အမျိုးသမီး သမ္မတ၏အမည်မှာ Isabel Martinez de Peronဖြစ်ပြီး Argentina နိုင်ငံ၏ ၄၂ ယောက်မြောက်သမ္မတလည်းဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ဓာတုဗေဒ','အောက်ပါ elementများတွင် Noble gas
+မဟုတ်သောelement မှာ-','Helium','Chlorine','Argon','Krypton','Chlorine',
+'Chlorine သည် Highly reactive ဖြစ်သည့်အတွက် Noble gas
+မဟုတ်သောelement တစ်ခု ဖြစ်ပါသည်။');
+
+
+
+
+Hard
+///////////////////
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အထိမ်းအမှတ်နေ့များ','World Cancer Day မှာ-','February 2','February 3','February 4','February 5','February 4','World Cancer Day ကို February လ 4ရက်နေ့အဖြစ် ကင်ဆာ‌ရောဂါကို နားလည်သဘောရန်၊ ကြိုတင်ကာကွယ်တားဆီးနိုင်ရန် နှင့် ကုသပျောက်ကင်းစေရန် ရည်ရွယ်၍ နိုင်ငံတကာမှ သတ်မှတ်ခဲ့ခြင်းဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('သမ္မတများ','မြန်မာနိုင်ငံ၏ ပဉ္စမမြောက် သမ္မတမှာ-','ဦးစန်းယု','မန်းဝင်းမောင်','ဦးနေဝင်း','ဦးစန်းလွင်','၊ဦးစန်းယု','ဦးစန်းယုသည် ၁၉၈၁ခုနှစ် နိုဝင်ဘာ ၉ရက်မှ ၁၉၈၈ခုနှစ် ဇူလိုင် ၂၅ရက်အထိ မြန်မာနိုင်ငံ၏ ပဉ္စမမြောက် သမ္မတ အဖြစ် တာဝန်ထမ်းဆောင်ခဲ့ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ဆိုရိုးစကား','ပုပ်မှပေါ်၊________။','ဟုတ်မှကျော်','လုပ်မှမော်','လုပ်မှကျော်','ဟုတ်မှမော်','လုပ်မှကျော်','ပုပ်မှပေါ်၊ လုပ်မှကျော်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ဝတ္ထုများ','"အရသာမတူသော ပန်းသီးများ" စာအုပ်ကို မည်သူရေးသားခဲ့သနည်း။','တင့်‌ဇော်','လူခါး','မနီတာ','ဖေမြင့်','တင့်‌ဇော်','စာရေးသူ တင့်ဇော်သည် ၂၀၁၇ခုနှစ်တွင် "အရသာမတူသော ပန်းသီးများ"စာအုပ်ဖြင့် အမျိုးသားစာပေဆုရရှိခဲ့ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('IT','ROM အမျိုးအစားများမှာ-','PROM, EEEEEPROM, RROM','PROM, EPROM,EEPROM',
+'PCROM, PDROM, PEROM','RPOM, RRROM, PPOM','PROM, EPROM,EEPROM','အဓိကအားဖြင့် ROM အမျိုးအစား ၅ ခုရှိပါသည်။၎င်းတို့မှာ ROM,PROM, EPROM,EEPROM နှင့် Flash memory တို့ဖြစ်ပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('အနုပညာ','ကမ္ဘာ့‌ဈေးအကြီးဆုံး ဓာတ်ပုံ၏ အမည်မှာ-',
+'Rhein II','Phantom','Spiritual America','Dead Troops Talk','Phantom','Phantom အမည်ရှိ ဓာတ်ပုံသည် Austrilian ဓာတ်ပုံပညာရှင် Peter Lik ၏ ထင်ရှားသော အနုပညာလက်ရာဖြစ်ပြီး အမေရိကန် ဒေါ်လာ ၆၅ million တန်ဖိုးရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ဂီတ','Hawaiian ဘာသာစကားတွင်"Ukulele"ဆိုသော စကားလုံးသည်
+မည်သည့်အဓိပ္ပာယ်ရှိသနည်း။','Jumping flea','Small guitar','Island banjo','Small bug fiddle','Jumping flea','Ukulele သည် ကြိုးငယ်လေးကြိုးပါဝင်သော ဂီတာ အငယ်စား ဖြစ်ပြီး
+Jumping-ခုန်နေသည်    Flea       -သန်း 
+ဟုအဓိပ္ပာယ်ရှိပါသည်။');
+
+insert into lpquestions(category,question,op_one,op_two,op_three,op_four,answer,expl_a)
+values('ပထဝီ','မြန်မာနိုင်ငံမှ တရုတ်နိုင်ငံသို့ သွားရောက်နိုင်သော လမ်းအမည်မှာ-','ကော့ကရိတ်လမ်း',
+'တမူးလမ်း','တာပိန်လမ်း','အများတောင်ကြားလမ်း','တာပိန်လမ်း','မြန်မာနိုင်ငံမှ တရုတ်နိုင်ငံသို့ သွားရောက်နိုင်သော လမ်းမကြီးများ မှာ တာပိန်လမ်း၊ နမ်တင့်လမ်း၊ ရွှေလီလမ်း နှင့် တရုတ်-မြန်မာလမ်းမကြီး တို့ဖြစ်ကြသည်။');
+
+
