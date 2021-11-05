@@ -6,7 +6,7 @@
     /* colors */
     --clr-dark: #334A52;
     --clr-dark-primary: #1D798E;
-    --clr-primary: #28AECE;
+    --clr-primary: #37D2F6;
     --clr-danger: #F97599;
     --clr-success: #65B16A;
     --clr-white: #E6F4F1;
@@ -160,6 +160,10 @@ body {
     color: var(--clr-dark);
 }
 
+.shape-shadow{
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
 .bulb-ani{
     /* fill: var(--clr-danger); */
     animation: up-and-down 1000ms alternate infinite ease-in-out;
@@ -303,7 +307,8 @@ body {
     width: 195px;
     height: 59px;
     font-size: 1.5rem;
-    background: #28AECE;
+    /* background: var(--clr-primary); */
+    background: linear-gradient(90deg, #37D2F6 0%, #28AECE 100%);
     color: white;
     border-radius: 50px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
