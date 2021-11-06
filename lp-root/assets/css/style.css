@@ -747,3 +747,19 @@ body {
     background-color: gray;
     left: 80px;
 }
+
+.quiz-jum .quiz-answer .lp-buttons .op-button.success-btn{
+    border-color: var(--clr-light-success);
+}
+
+.quiz-jum .quiz-answer .lp-buttons .op-button.success-btn .radio > span{
+    background-color: var(--clr-light-success);
+}
+
+.quiz-jum .quiz-answer .lp-buttons .op-button.danger-btn{
+    border-color: var(--clr-light-danger);
+}
+
+.quiz-jum .quiz-answer .lp-buttons .op-button.danger-btn .radio > span{
+    background-color: var(--clr-light-danger);
+}

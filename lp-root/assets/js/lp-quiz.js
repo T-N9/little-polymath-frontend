@@ -53,7 +53,7 @@ const displayQuiz = (i) => {
     lpOp3.textContent = quizSetData[i].option[2];
     lpOp4.textContent = quizSetData[i].option[3];
 
-    let time_i = 20;
+    let time_i = 5;
     document.querySelector('.score-timer').innerHTML = time_i;
     let timer = setInterval(() => {
         time_i--;
@@ -166,6 +166,17 @@ const questionResult = () => {
     //     <small>${quizSetData[quiz_i].explanation}</small>
     //     <button onclick="nextQuestion()">Next</button>
     // `;
+    optionButtons.forEach(resultBtn => {
+        let readBtn = resultBtn.getAttribute('ondblclick').slice(12,-1)
+
+        if(readBtn == ansIndex) {
+            resultBtn.classList.add('success-btn');
+            console.log("TREUREJ");
+        }else if(readBtn !=ansIndex && readBtn == clickedBtnIndex){
+            resultBtn.classList.add('danger-btn');
+        }
+    })
+    
 
     console.log(clickedBtnIndex, ansIndex)
     } else {
