@@ -715,6 +715,7 @@ body {
 }
 
 .quiz-jum .quiz-answer .lp-buttons .op-button .radio{
+    position: relative;
     display: block;
     width: 24px;
     height: 24px;
@@ -722,6 +723,21 @@ body {
     border-radius: 50px;
     border: 1px solid var(--clr-dark);
     margin-right: 20px;
+}
+
+.quiz-jum .quiz-answer .lp-buttons .op-button.selected {
+    border-color: var(--clr-primary);
+}
+
+.quiz-jum .quiz-answer .lp-buttons .op-button.selected .radio > span{
+    position: absolute;
+    background-color: var(--clr-primary);
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+    top: 52%;
+    left: 52%;
+    transform: translate(-50%, -50%);
 }
 
 .quiz-jum .quiz-answer .lp-buttons .op-button .line{
