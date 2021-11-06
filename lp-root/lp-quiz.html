@@ -5,8 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <h1>Hello</h1>
+    <main class="hy-text">
+        <header>
+            <div class="timer-path">
+                <span class="timer-indicator"></span>
+                <span class="score-timer d-none"></span>
+            </div>
+            <div class="ques-mark">
+                <span class="ques-no"> မေးခွန်း - <span class="lp-no"></span></span>
+                <span class="mark"> ၁၁၀ <img class="lp-point" src="./assets/images/point.svg" alt="point"></span>
+            </div>
+        </header>
+        <section class="quiz-jum">
+            <div class="quiz-question">
+                <div class="lp-category"></div>
+                <p class="lp-question">
+
+                </p>
+                <div class="lp-options">
+                    <div class="option-item">
+                        <span class="op-check">( က )</span>
+                        <span class="lp-option-a"></span>
+                    </div>
+                    <div class="option-item">
+                        <span class="op-check">( ခ )</span>
+                        <span class="lp-option-b"></span>
+                    </div>
+                    <div class="option-item">
+                        <span class="op-check">( ဂ )</span>
+                        <span class="lp-option-c"></span>
+                    </div>
+                    <div class="option-item">
+                        <span class="op-check">( ဃ )</span>
+                        <span class="lp-option-d"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz-answer flex-auto">
+                <div class="lp-buttons">
+                    <button onclick="validateAns(0)" class="op-button">
+                        <span class="radio">
+                        </span>
+                        <span class="line"></span>
+                        က
+                    </button>
+                    <button onclick="validateAns(1)" class="op-button">
+                        <span class="radio">
+                        </span>
+                        <span class="line"></span>
+                        ခ
+                    </button>
+                    <button onclick="validateAns(2)" class="op-button">
+                        <span class="radio">
+                        </span>
+                        <span class="line"></span>
+                        ဂ
+                    </button>
+                    <button onclick="validateAns(3)" class="op-button">
+                        <span class="radio">
+                        </span>
+                        <span class="line"></span>
+                        ဃ
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/lp-quiz.js"></script>
 </body>
 </html>
