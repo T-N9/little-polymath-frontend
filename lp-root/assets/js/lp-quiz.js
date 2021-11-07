@@ -35,7 +35,7 @@ let userAns = null; /* temp var to check condition user selected answer */
 /* ---------------------------------------------------- */
 // creating template for each quiz
 /* ---------------------------------------------------- */
-let quiz_i = 4;
+let quiz_i = 0;
 const lpQuesNo = document.querySelector('.lp-no')
 const lpCategory = document.querySelector('.lp-category');
 const lpQuestion = document.querySelector('.lp-question');
@@ -52,6 +52,8 @@ const displayQuiz = (i) => {
     lpOp2.textContent = quizSetData[i].option[1];
     lpOp3.textContent = quizSetData[i].option[2];
     lpOp4.textContent = quizSetData[i].option[3];
+
+    timerIndicator.classList.add('start');
 
     let time_i = 5;
     document.querySelector('.score-timer').innerHTML = time_i;
@@ -79,26 +81,6 @@ const displayQuiz = (i) => {
 
 displayQuiz(quiz_i);
 
-
-/* ---------------------------------------------------- */
-// display questions ++
-/* ---------------------------------------------------- */
-const nextQuestion = () => {
-    userAns = null;
-    quiz_i++;
-    document.querySelector('.result').innerHTML ="";
-
-    if(quiz_i >= 10){
-        console.log("Out of QUiz");
-    }
-
-    try{
-        displayQuiz(quiz_i);
-    }catch(e){
-        console.log("Here is error");
-    }
-}
-
 /* ---------------------------------------------------- */
 // validate user answer with answer in quizSetData
 /* ---------------------------------------------------- */
@@ -109,7 +91,7 @@ optionButtons.forEach(btn => {
     btn.addEventListener('dblclick', ()=>{
         optionButtons.forEach(btnClass => {
             btnClass.classList.value = "op-button";
-        })
+        });
         btn.classList.add("selected");
         clickedBtnIndex = parseInt(btn.getAttribute('ondblclick').slice(12,-1));
         return clickedBtnIndex;
@@ -144,21 +126,56 @@ const validateAns = (ans) => {
 // result for each question
 /* ---------------------------------------------------- */
 let score = 0;
-let life = 3;
+let life = 4;
+let lifeEl = document.querySelector('.lives');
+
+const setLife = (no) => {
+    lifeEl.innerHTML="";
+    for( let l = 0; l < no ; l++){
+        lifeEl.innerHTML += `
+            <img class="lp-life" src="./assets/images/heart.png">
+        `;
+    }
+}
+setLife(life);
+
+const resultFooter = document.querySelector('.result-footer');
+const resultImg = document.querySelector('.result-img');
+const resultText = document.querySelector('.result-text');
+const resultExpl = document.querySelector('.result-expl');
+const resultRight = document.querySelector('.result-right');
 
 const questionResult = () => {
-    let resultText; 
+    resultExpl.innerHTML = quizSetData[quiz_i].explanation;
     if(userAns === true){
-        resultText = "သင့်အဖြေ မှန်ကန်ပါသည်။";
+        resultImg.setAttribute("src", "./assets/images/correct-answer.svg");
+        resultText.innerHTML = `သင့်အဖြေ <span class="h-d-s-text">မှန်ကန်</span> ပါသည်။`;
         score = score + 10 + score_Timer;
     }else if (userAns === false){
-        resultText = "သင့်အဖြေ မှားယွင်းနေပါသည်။";
+        resultRight.innerHTML = `
+            <span>
+                အဖြေမှန်မှာ <span class="h-d-s-text">${quizSetData[quiz_i].answer}</span> ဖြစ်ပါသည်။
+            </span>
+            
+        `;
+        resultImg.setAttribute("src", "./assets/images/wrong-answer.svg");
+        resultText.innerHTML = `သင့်အဖြေ <span class="h-d-d-text">မှားယွင်း</span> နေပါသည်။`;
         life = life -1;
+        setLife(life);
     }else {
-        resultText = "သင် ဖြေဆိုထားခြင်းမရှိပါ။";
+        resultRight.innerHTML = `
+            <span>
+                အဖြေမှန်မှာ <span class="h-d-s-text">${quizSetData[quiz_i].answer}</span> ဖြစ်ပါသည်။
+            </span>
+            
+        `;
+        resultImg.setAttribute("src", "./assets/images/no-answer.svg");
+        resultText.textContent = "သင် ဖြေဆိုထားခြင်းမရှိပါ။";
         life = life -1;
+        setLife(life);
     }
     if(life > 0) {
+        
     //     document.querySelector('.result').innerHTML = `
     //     <h2>အမှတ် ${en2mm(score)}</h2>
     //     <h3>${resultText}</h3>
@@ -167,7 +184,8 @@ const questionResult = () => {
     //     <button onclick="nextQuestion()">Next</button>
     // `;
     optionButtons.forEach(resultBtn => {
-        let readBtn = resultBtn.getAttribute('ondblclick').slice(12,-1)
+        let readBtn = resultBtn.getAttribute('ondblclick').slice(12,-1);
+        resultBtn.setAttribute('disabled', '');
 
         if(readBtn == ansIndex) {
             resultBtn.classList.add('success-btn');
@@ -175,13 +193,44 @@ const questionResult = () => {
         }else if(readBtn !=ansIndex && readBtn == clickedBtnIndex){
             resultBtn.classList.add('danger-btn');
         }
-    })
+    });
+
+    timerIndicator.classList.remove('start');
+    resultFooter.innerHTML = `
+        <button onclick="nextQuestion()" class="next-quesBtn">Next</button>
+    `;
     
+    setTimeout(() => {
+        document.querySelector('.quiz-result').classList.remove('d-none');
+    }, 1000);
 
     console.log(clickedBtnIndex, ansIndex)
     } else {
-        document.querySelector('.result').innerHTML = `
-        <h1>You Lose !!!</h1>
-    `;
+        console.log("You Lose!!!");
+    }
+}
+
+/* ---------------------------------------------------- */
+// display questions ++
+/* ---------------------------------------------------- */
+const nextQuestion = () => {
+    userAns = null;
+    quiz_i++;
+    // document.querySelector('.result').innerHTML ="";
+    document.querySelector('.quiz-result').classList.add('d-none');
+    timerIndicator.classList.add('start');
+    optionButtons.forEach(btnClass => {
+        btnClass.classList.value = "op-button";
+        btnClass.removeAttribute('disabled');
+    });
+
+    if(quiz_i >= 10){
+        console.log("Out of QUiz");
+    }
+
+    try{
+        displayQuiz(quiz_i);
+    }catch(e){
+        console.log("Here is error");
     }
 }

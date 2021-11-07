@@ -590,13 +590,13 @@ body {
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 
-.timer-path .timer-indicator {
+.timer-path .timer-indicator.start {
     display: block;
     width: 100%;
     height: 100%;
     background-color: var(--clr-success);
     transform-origin: left;
-    animation: timer 20000ms linear both;
+    animation: timer 5000ms linear both;
     transition: background-color 1000ms linear;
 }
 
@@ -625,6 +625,17 @@ body {
 
     font-size: 1.5rem;
     color: var(--clr-dark-primary);
+}
+
+.ques-mark .lives {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.ques-mark .lives > img{
+    width: 20px;
+    margin-right: 10px;
 }
 
 .ques-mark .mark .lp-point {
@@ -762,4 +773,67 @@ body {
 
 .quiz-jum .quiz-answer .lp-buttons .op-button.danger-btn .radio > span{
     background-color: var(--clr-light-danger);
+}
+
+.quiz-result {
+    position: absolute;
+    background-color: #E6F4F190;
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 500;
+}
+
+.quiz-result .result-wrapper {
+    width: 800px;
+    min-height: 500px;
+    background-color: var(--clr-dark);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 20px;
+    padding: 22px 40px;
+    color: white;
+    overflow: auto;
+}
+
+.quiz-result .result-wrapper .result-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quiz-result .result-wrapper .result-header .result-img {
+    width: 200px;
+}
+
+.quiz-result .result-wrapper .result-header .result-text {
+    font-size: 2.5rem;
+}
+
+.quiz-result .result-wrapper .result-body {
+    font-size: 1.5rem;
+}
+
+.quiz-result .result-wrapper .result-body .result-expl {
+    margin-top: 20px;
+}
+
+.quiz-result .result-wrapper .result-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-result .result-wrapper .result-footer .next-quesBtn{
+    font-family: Helvetica-Rounded;
+    border: none;
+    outline: none;
+    background-color: var(--clr-dark-primary);
+    border-radius: 50px;
+    color: white;
+    padding: 10px 30px;
+    box-shadow: var(--clr-primary) 0px 1px 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
