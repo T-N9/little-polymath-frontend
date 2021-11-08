@@ -123,6 +123,33 @@ const validateAns = (ans) => {
 }
 
 /* ---------------------------------------------------- */
+// display questions ++
+/* ---------------------------------------------------- */
+const nextQuestion = () => {
+    userAns = null;
+    quiz_i++;
+    // document.querySelector('.result').innerHTML ="";
+    document.querySelector('.quiz-result').classList.add('d-none');
+    timerIndicator.classList.add('start');
+    optionButtons.forEach(btnClass => {
+        btnClass.classList.value = "op-button";
+        btnClass.removeAttribute('disabled');
+    });
+
+    if(quiz_i >= 10){
+        console.log("Out of QUiz");
+    }
+
+    try{
+        displayQuiz(quiz_i);
+    }catch(e){
+        console.log("Here is error");
+    }
+
+    return quiz_i, userAns;
+}
+
+/* ---------------------------------------------------- */
 // result for each question
 /* ---------------------------------------------------- */
 let score = 0;
@@ -151,6 +178,7 @@ const resultRight = document.querySelector('.result-right');
 const questionResult = () => {
     resultExpl.innerHTML = quizSetData[quiz_i].explanation;
     if(userAns === true){
+        resultRight.innerHTML = "";
         resultImg.setAttribute("src", "./assets/images/correct-answer.svg");
         resultText.innerHTML = `သင့်အဖြေ <span class="h-d-s-text">မှန်ကန်</span> ပါသည်။`;
         score = score + 10 + score_Timer;
@@ -204,31 +232,4 @@ const questionResult = () => {
     } else {
         console.log("You Lose!!!");
     }
-}
-
-/* ---------------------------------------------------- */
-// display questions ++
-/* ---------------------------------------------------- */
-const nextQuestion = () => {
-    userAns = null;
-    quiz_i++;
-    // document.querySelector('.result').innerHTML ="";
-    document.querySelector('.quiz-result').classList.add('d-none');
-    timerIndicator.classList.add('start');
-    optionButtons.forEach(btnClass => {
-        btnClass.classList.value = "op-button";
-        btnClass.removeAttribute('disabled');
-    });
-
-    if(quiz_i >= 10){
-        console.log("Out of QUiz");
-    }
-
-    try{
-        displayQuiz(quiz_i);
-    }catch(e){
-        console.log("Here is error");
-    }
-
-    return quiz_i, userAns;
 }
