@@ -36,6 +36,7 @@ let userAns = null; /* temp var to check condition user selected answer */
 // creating template for each quiz
 /* ---------------------------------------------------- */
 let quiz_i = 0;
+const quizJumEl = document.querySelector('.quiz-jum')
 const lpQuesNo = document.querySelector('.lp-no')
 const lpCategory = document.querySelector('.lp-category');
 const lpQuestion = document.querySelector('.lp-question');
@@ -53,33 +54,41 @@ const displayQuiz = (i) => {
     lpOp3.textContent = quizSetData[i].option[2];
     lpOp4.textContent = quizSetData[i].option[3];
 
-    timerIndicator.classList.add('start');
-
+    timerIndicator.classList.add('wait');
     let time_i = 5;
     document.querySelector('.score-timer').innerHTML = time_i;
-    let timer = setInterval(() => {
-        time_i--;
-        
-        if (time_i <= 0) {
-            clearInterval(timer);
-            questionResult();
-        }
+    setTimeout(() => {
+        timerIndicator.classList.remove('wait');
+        timerIndicator.classList.add('start');
 
-        if (time_i <= 13){
-            timerIndicator.classList.add('timer-warning');
-        }
-
-        if (time_i <= 6){
-            timerIndicator.classList.remove('timer-warning');
-            timerIndicator.classList.add('timer-danger');
-        }
-
-        document.querySelector('.score-timer').innerHTML = time_i;
-        return time_i;
-    }, 1000);
+        let timer = setInterval(() => {
+            time_i--;
+            
+            if (time_i <= 0) {
+                clearInterval(timer);
+                questionResult();
+            }
+    
+            if (time_i <= 13){
+                timerIndicator.classList.add('timer-warning');
+            }
+    
+            if (time_i <= 6){
+                timerIndicator.classList.remove('timer-warning');
+                timerIndicator.classList.add('timer-danger');
+            }
+    
+            document.querySelector('.score-timer').innerHTML = time_i;
+            return time_i;
+        }, 1000);
+    }, 900);
+    
 }
 
+quizJumEl.classList.remove('waiting');
+quizJumEl.classList.add('ready');
 displayQuiz(quiz_i);
+
 
 /* ---------------------------------------------------- */
 // validate user answer with answer in quizSetData
@@ -126,25 +135,38 @@ const validateAns = (ans) => {
 // display questions ++
 /* ---------------------------------------------------- */
 const nextQuestion = () => {
+    timerIndicator.classList.remove('timer-danger');
+    timerIndicator.classList.add('wait');
+    if(life === 0) {
+        window.location.href = "lp-result.html";
+    }
+
     userAns = null;
     quiz_i++;
     // document.querySelector('.result').innerHTML ="";
     document.querySelector('.quiz-result').classList.add('d-none');
-    timerIndicator.classList.add('start');
     optionButtons.forEach(btnClass => {
         btnClass.classList.value = "op-button";
         btnClass.removeAttribute('disabled');
     });
+
+    setTimeout(() => {
+        timerIndicator.classList.add('start'); 
+    }, 2000);
 
     if(quiz_i >= 10){
         console.log("Out of QUiz");
     }
 
     try{
+        quizJumEl.classList.remove('waiting');
+        quizJumEl.classList.add('ready');
         displayQuiz(quiz_i);
     }catch(e){
         console.log("Here is error");
     }
+
+    
 
     return quiz_i, userAns;
 }
@@ -158,10 +180,34 @@ let lifeEl = document.querySelector('.lives');
 const userMark = document.querySelector('.lp-mark');
 userMark.innerHTML = en2mm(score);
 
+
+
+const resultFooter = document.querySelector('.result-footer');
+const resultImg = document.querySelector('.result-img');
+const resultText = document.querySelector('.result-text');
+const resultExpl = document.querySelector('.result-expl');
+const resultRight = document.querySelector('.result-right');
+const resultLife = document.querySelector('.result-life');
+const resultMark = document.querySelector('.result-mark');
+
 // Setting user lives
 const setLife = (no) => {
+    let deadCount = 4-life;
+    console.log("Dead "+deadCount);
+    let deadHeart = `<img class="lp-life" src="./assets/images/un-heart.png">`;
+    
+
+
     lifeEl.innerHTML="";
+    resultLife.innerHTML="";
+    for(let d = 0; d < deadCount; d++){
+        resultLife.innerHTML += deadHeart;
+        lifeEl.innerHTML += deadHeart;
+    }
     for( let l = 0; l < no ; l++){
+        resultLife.innerHTML += `
+            <img class="lp-life" src="./assets/images/heart.png">
+        `;
         lifeEl.innerHTML += `
             <img class="lp-life" src="./assets/images/heart.png">
         `;
@@ -169,19 +215,19 @@ const setLife = (no) => {
 }
 setLife(life);
 
-const resultFooter = document.querySelector('.result-footer');
-const resultImg = document.querySelector('.result-img');
-const resultText = document.querySelector('.result-text');
-const resultExpl = document.querySelector('.result-expl');
-const resultRight = document.querySelector('.result-right');
-
 const questionResult = () => {
+    quizJumEl.classList.remove('ready');
+    quizJumEl.classList.add('waiting');
     resultExpl.innerHTML = quizSetData[quiz_i].explanation;
     if(userAns === true){
         resultRight.innerHTML = "";
         resultImg.setAttribute("src", "./assets/images/correct-answer.svg");
         resultText.innerHTML = `သင့်အဖြေ <span class="h-d-s-text">မှန်ကန်</span> ပါသည်။`;
+        timer_Score = document.querySelector('.score-timer');
+        
+        let ori_score = score;
         score = score + 10 + score_Timer;
+        resultMark.innerHTML = `${en2mm(ori_score)} <span class="h-d-p-text">+ ${en2mm(10)} + ${en2mm(score_Timer)}</span> = <span class="h-d-s-text">${en2mm(score)}</span> `;
     }else if (userAns === false){
         resultRight.innerHTML = `
             <span>
@@ -193,6 +239,9 @@ const questionResult = () => {
         resultText.innerHTML = `သင့်အဖြေ <span class="h-d-d-text">မှားယွင်း</span> နေပါသည်။`;
         life = life -1;
         setLife(life);
+        
+        let ori_score = score;
+        resultMark.innerHTML = `${en2mm(ori_score)} = <span class="h-d-s-text">${en2mm(score)}</span> `;
     }else {
         resultRight.innerHTML = `
             <span>
@@ -213,7 +262,6 @@ const questionResult = () => {
 
             if(readBtn == ansIndex) {
                 resultBtn.classList.add('success-btn');
-                console.log("TREUREJ");
             }else if(readBtn !=ansIndex && readBtn == clickedBtnIndex){
                 resultBtn.classList.add('danger-btn');
             }
@@ -230,6 +278,9 @@ const questionResult = () => {
 
     console.log(clickedBtnIndex, ansIndex)
     } else {
-        console.log("You Lose!!!");
+        setTimeout(() => {
+            document.querySelector('.quiz-result').classList.remove('d-none');
+        }, 1000);
+        // console.log("You Lose!!!");
     }
 }
