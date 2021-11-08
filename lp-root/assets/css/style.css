@@ -1014,3 +1014,40 @@ body {
 .quiz-jum.ready .lp-buttons {
     animation: fade-in 300ms ease-out both 600ms;
 }
+
+.result-jum {
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .result-jum {
+        flex-direction: column;
+    }
+}
+
+.result-jum .result-media {
+    flex: 1;
+}
+
+.result-jum .result-media > img{
+    width: 500px;
+}
+
+
+.result-jum .result-text {
+    flex: 1;
+}
+
+.result-jum .result-text .result-bool {
+    font-size: var(--fs-600);
+    
+}
+
+.result-jum .result-text .result-title {
+    font-size: var(--fs-800);
+    font-weight: 400;
+}
+
+.result-jum .result-text .result-desc {
+    font-size: var(--fs-500);
+}

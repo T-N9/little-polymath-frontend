@@ -17,7 +17,7 @@ function en2mm(num) {
 let quizSetData; /* to store a temporary data from session */
 
 /* ---------------------------------------------------- */
-// return session data
+// get session data
 /* ---------------------------------------------------- */
 const getData = () => {
     quizSetData= JSON.parse(sessionStorage.getItem("items"))
@@ -134,48 +134,55 @@ const validateAns = (ans) => {
 /* ---------------------------------------------------- */
 // display questions ++
 /* ---------------------------------------------------- */
+let score = 0;
+let life = 4;
+
 const nextQuestion = () => {
     timerIndicator.classList.remove('timer-danger');
     timerIndicator.classList.add('wait');
     if(life === 0) {
+        // sessionStorage.setItem("remainLife" , life);
+        sessionStorage.setItem("totalScore" , score);
         window.location.href = "lp-result.html";
+    } else {
+        userAns = null;
+        quiz_i++;
+        // document.querySelector('.result').innerHTML ="";
+        document.querySelector('.quiz-result').classList.add('d-none');
+        optionButtons.forEach(btnClass => {
+            btnClass.classList.value = "op-button";
+            btnClass.removeAttribute('disabled');
+        });
+
+        setTimeout(() => {
+            timerIndicator.classList.add('start'); 
+        }, 2000);
+
+        if(quiz_i >= 10){
+            // score = score + (life *)
+            sessionStorage.setItem("totalScore" , score);
+            // sessionStorage.setItem("remainLife" , life);
+            window.location.href = "lp-result.html";
+            console.log("Out of QUiz");
+        } else {
+            try{
+                quizJumEl.classList.remove('waiting');
+                quizJumEl.classList.add('ready');
+                displayQuiz(quiz_i);
+            }catch(e){
+                console.log("Here is error");
+            }
+        }
+
+        return quiz_i, userAns;
     }
-
-    userAns = null;
-    quiz_i++;
-    // document.querySelector('.result').innerHTML ="";
-    document.querySelector('.quiz-result').classList.add('d-none');
-    optionButtons.forEach(btnClass => {
-        btnClass.classList.value = "op-button";
-        btnClass.removeAttribute('disabled');
-    });
-
-    setTimeout(() => {
-        timerIndicator.classList.add('start'); 
-    }, 2000);
-
-    if(quiz_i >= 10){
-        console.log("Out of QUiz");
-    }
-
-    try{
-        quizJumEl.classList.remove('waiting');
-        quizJumEl.classList.add('ready');
-        displayQuiz(quiz_i);
-    }catch(e){
-        console.log("Here is error");
-    }
-
-    
-
-    return quiz_i, userAns;
 }
 
 /* ---------------------------------------------------- */
 // result for each question
 /* ---------------------------------------------------- */
-let score = 0;
-let life = 4;
+// let score = 0;
+// let life = 4;
 let lifeEl = document.querySelector('.lives');
 const userMark = document.querySelector('.lp-mark');
 userMark.innerHTML = en2mm(score);
@@ -253,6 +260,9 @@ const questionResult = () => {
         resultText.textContent = "သင် ဖြေဆိုထားခြင်းမရှိပါ။";
         life = life -1;
         setLife(life);
+
+        let ori_score = score;
+        resultMark.innerHTML = `${en2mm(ori_score)} = <span class="h-d-s-text">${en2mm(score)}</span> `;
     }
     if(life > 0) {
         userMark.innerHTML = en2mm(score);
@@ -278,6 +288,18 @@ const questionResult = () => {
 
     console.log(clickedBtnIndex, ansIndex)
     } else {
+        userMark.innerHTML = en2mm(score);
+        optionButtons.forEach(resultBtn => {
+            let readBtn = resultBtn.getAttribute('ondblclick').slice(12,-1);
+            resultBtn.setAttribute('disabled', '');
+
+            if(readBtn == ansIndex) {
+                resultBtn.classList.add('success-btn');
+            }else if(readBtn !=ansIndex && readBtn == clickedBtnIndex){
+                resultBtn.classList.add('danger-btn');
+            }
+        });
+
         setTimeout(() => {
             document.querySelector('.quiz-result').classList.remove('d-none');
         }, 1000);

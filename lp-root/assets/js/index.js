@@ -49,7 +49,7 @@ const dataSet = async () => {
         getQuestionSet(item);
     })
 
-    console.log(questionSet);
+    // console.log(questionSet);
     window.sessionStorage.setItem("items", JSON.stringify(questionSet));
 }
 dataSet();
