@@ -128,7 +128,10 @@ const validateAns = (ans) => {
 let score = 0;
 let life = 4;
 let lifeEl = document.querySelector('.lives');
+const userMark = document.querySelector('.lp-mark');
+userMark.innerHTML = en2mm(score);
 
+// Setting user lives
 const setLife = (no) => {
     lifeEl.innerHTML="";
     for( let l = 0; l < no ; l++){
@@ -175,25 +178,18 @@ const questionResult = () => {
         setLife(life);
     }
     if(life > 0) {
-        
-    //     document.querySelector('.result').innerHTML = `
-    //     <h2>အမှတ် ${en2mm(score)}</h2>
-    //     <h3>${resultText}</h3>
-    //     <p>${quizSetData[quiz_i].answer}</p>
-    //     <small>${quizSetData[quiz_i].explanation}</small>
-    //     <button onclick="nextQuestion()">Next</button>
-    // `;
-    optionButtons.forEach(resultBtn => {
-        let readBtn = resultBtn.getAttribute('ondblclick').slice(12,-1);
-        resultBtn.setAttribute('disabled', '');
+        userMark.innerHTML = en2mm(score);
+        optionButtons.forEach(resultBtn => {
+            let readBtn = resultBtn.getAttribute('ondblclick').slice(12,-1);
+            resultBtn.setAttribute('disabled', '');
 
-        if(readBtn == ansIndex) {
-            resultBtn.classList.add('success-btn');
-            console.log("TREUREJ");
-        }else if(readBtn !=ansIndex && readBtn == clickedBtnIndex){
-            resultBtn.classList.add('danger-btn');
-        }
-    });
+            if(readBtn == ansIndex) {
+                resultBtn.classList.add('success-btn');
+                console.log("TREUREJ");
+            }else if(readBtn !=ansIndex && readBtn == clickedBtnIndex){
+                resultBtn.classList.add('danger-btn');
+            }
+        });
 
     timerIndicator.classList.remove('start');
     resultFooter.innerHTML = `
@@ -233,4 +229,6 @@ const nextQuestion = () => {
     }catch(e){
         console.log("Here is error");
     }
+
+    return quiz_i, userAns;
 }
