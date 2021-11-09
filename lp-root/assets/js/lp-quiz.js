@@ -141,8 +141,8 @@ const nextQuestion = () => {
     timerIndicator.classList.remove('timer-danger');
     timerIndicator.classList.add('wait');
     if(life === 0) {
-        // sessionStorage.setItem("remainLife" , life);
-        sessionStorage.setItem("totalScore" , score);
+        let sessionData = [score, life ];
+        sessionStorage.setItem("sessionData" , sessionData);
         window.location.href = "lp-result.html";
     } else {
         userAns = null;
@@ -159,9 +159,8 @@ const nextQuestion = () => {
         }, 2000);
 
         if(quiz_i >= 10){
-            // score = score + (life *)
-            sessionStorage.setItem("totalScore" , score);
-            // sessionStorage.setItem("remainLife" , life);
+            let sessionData = [score, life ];
+            sessionStorage.setItem("sessionData" , sessionData);
             window.location.href = "lp-result.html";
             console.log("Out of QUiz");
         } else {

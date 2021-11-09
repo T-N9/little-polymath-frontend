@@ -1017,11 +1017,18 @@ body {
 
 .result-jum {
     min-height: 100vh;
+    padding: 50px;
 }
 
 @media (max-width: 768px) {
     .result-jum {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .result-jum {
+        padding: 0px;
     }
 }
 
@@ -1036,6 +1043,24 @@ body {
 
 .result-jum .result-text {
     flex: 1;
+    padding: 20px;
+    color: var(--clr-white);
+    background-color: var(--clr-dark);
+    border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+    .result-jum .result-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0;
+    }
+}
+
+.result-jum .result-text > p{
+    margin-bottom: 10px;
 }
 
 .result-jum .result-text .result-bool {
@@ -1044,10 +1069,55 @@ body {
 }
 
 .result-jum .result-text .result-title {
-    font-size: var(--fs-800);
+    font-size: var(--fs-700);
     font-weight: 400;
 }
 
-.result-jum .result-text .result-desc {
+.result-jum .result-text .result-total {
     font-size: var(--fs-500);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.result-jum .result-point {
+    margin-left: 20px;
+}
+
+.result-jum .result-point > img {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.result-jum .result-text .result-bonus {
+    font-size: var(--fs-500);
+}
+
+.result-jum .result-text .result-final {
+    font-size: var(--fs-600);
+}
+
+.result-jum .result-final .result-point {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.result-jum .result-final .result-point > img {
+    width: 70px;
+    margin-left: 10px;
+}
+
+.result-jum .result-text .result-home {
+    display: table;
+    border: none;
+    outline: none;
+    margin: auto;
+    font-family: Helvetica-Rounded;
+    background-color: var(--clr-primary);
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
 }
