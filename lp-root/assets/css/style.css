@@ -975,7 +975,7 @@ body {
         border-radius: 0;
         padding: 20px;
         min-height: unset;
-        height: 100vh;
+        height: 100%;
     }
 
     .quiz-result .result-wrapper .result-header {
