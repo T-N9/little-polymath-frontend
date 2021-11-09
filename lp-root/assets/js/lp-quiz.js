@@ -55,7 +55,7 @@ const displayQuiz = (i) => {
     lpOp4.textContent = quizSetData[i].option[3];
 
     timerIndicator.classList.add('wait');
-    let time_i = 5;
+    let time_i = 20;
     document.querySelector('.score-timer').innerHTML = time_i;
     setTimeout(() => {
         timerIndicator.classList.remove('wait');
@@ -148,7 +148,8 @@ const nextQuestion = () => {
         userAns = null;
         quiz_i++;
         // document.querySelector('.result').innerHTML ="";
-        document.querySelector('.quiz-result').classList.add('d-none');
+        document.querySelector('.quiz-result').classList.remove('show');
+        document.querySelector('.quiz-result').classList.add('hidden');
         optionButtons.forEach(btnClass => {
             btnClass.classList.value = "op-button";
             btnClass.removeAttribute('disabled');
@@ -282,7 +283,8 @@ const questionResult = () => {
     `;
     
     setTimeout(() => {
-        document.querySelector('.quiz-result').classList.remove('d-none');
+        document.querySelector('.quiz-result').classList.remove('hidden');
+        document.querySelector('.quiz-result').classList.add('show');
     }, 1000);
 
     console.log(clickedBtnIndex, ansIndex)
@@ -300,7 +302,8 @@ const questionResult = () => {
         });
 
         setTimeout(() => {
-            document.querySelector('.quiz-result').classList.remove('d-none');
+            document.querySelector('.quiz-result').classList.remove('hidden');
+            document.querySelector('.quiz-result').classList.remove('show');
         }, 1000);
         // console.log("You Lose!!!");
     }

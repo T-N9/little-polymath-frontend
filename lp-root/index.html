@@ -147,6 +147,7 @@
                 <div class="hero-btn-section">
                     <button class="hero-btn hero-start-btn">Start</button>
                     <button class="hero-btn hero-htp-btn">How to play?</button>
+                    <!-- <img src="./assets/images/Completed-game.svg" alt=""> -->
                 </div>
             </div>
         </header>
@@ -193,6 +194,21 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
         `;
+
+        // --- Preloading Images for Better UX
+
+        function preloadImage(url){
+        var img=new Image();
+        img.src=url;
+        }
+
+        preloadImage('./assets/images/heart.png');
+        preloadImage('./assets/images/un-heart.png');
+        preloadImage('./assets/images/correct-answer.svg');
+        preloadImage('./assets/images/wrong-answer.svg');
+        preloadImage('./assets/images/lose-game.svg');
+        preloadImage('./assets/images/Completed-game.svg');
+        preloadImage('./assets/images/point.svg');
     </script>
     <script src="./assets/js/index.js"></script>
 </body>
