@@ -52,6 +52,11 @@
     src: url(../fonts/MyanmarSagar.ttf);
 }
 
+@font-face {
+    font-family: Myanmar-Tagu;
+    src: url(../fonts/MyanmarTagu.ttf);
+}
+
 /* ------------------- */
 /* Reset */
 /* ------------------- */
@@ -103,7 +108,6 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
-    font-family: Helvetica-Rounded;
 }
 
 /* remove animations for people who've turned them off */
@@ -162,10 +166,18 @@ button {
     width: 40px;
 }
 
-.hy-text {
+.sa-text {
     font-family: Myanmar-Sagar;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    font-weight: 400;
+}
+
+.tg-text{
+    font-family: Myanmar-Tagu;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-weight: 400;
 }
 
 .flex-auto {
@@ -419,6 +431,7 @@ body {
 }
 
 .hero-jum .hero-btn-section .hero-btn {
+    font-family: Helvetica-Rounded;
     transition: all 100ms ease-in;
 }
 
@@ -432,7 +445,6 @@ body {
     width: 195px;
     height: 59px;
     font-size: 1.5rem;
-    /* background: var(--clr-primary); */
     background: linear-gradient(90deg, #37D2F6 0%, #28AECE 100%);
     color: white;
     border-radius: 50px;
@@ -573,7 +585,6 @@ body {
 }
 
 .how-to-play .htp-wrapper .htp-para {
-    font-family: Myanmar-Sagar;
     font-size: var(--fs-500);
 }
 
@@ -607,7 +618,7 @@ body {
 
 .timer-path {
     width: 100%;
-    height: 10px;
+    height: 15px;
     background-color: white;
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
@@ -635,7 +646,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: var(--clr-success);
-    animation: timer 20000ms linear both;
+    animation: timer 15000ms linear both;
     transition: background-color 1000ms linear;
 }
 
@@ -656,12 +667,13 @@ body {
 @media (max-width: 576px) {
     .ques-mark {
         padding: 10px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 }
 
 .ques-mark .ques-no {
     font-size: 1.2rem;
+    color: #005B98;
 }
 
 @media (max-width: 576px) {
@@ -685,14 +697,27 @@ body {
     margin-bottom: 10px;
 }
 
-.lp-life{
-    width: 20px;
+.ques-mark .lives > .lp-life:not(:last-child) {
     margin-right: 10px;
+}
+
+
+.lp-life{
+    width: 30px;
+    
+}
+
+.ques-mark .mark {
+    justify-content: flex-end;
 }
 
 .ques-mark .mark .lp-point {
     width: 50px;
     margin-left: 10px;
+}
+
+.ques-mark .mark .lp-mark {
+    font-weight: bold;
 }
 
 .quiz-jum {
@@ -725,6 +750,7 @@ body {
     font-size: 1.3rem;
     padding: 50px 40px;
     border-radius: 10px;
+    border: 1px solid var(--clr-dark-primary);
 }
 
 @media (max-width: 786px) {
@@ -746,11 +772,12 @@ body {
     position: absolute;
     top: -20px;
     display: inline-block;
-    padding: 5px 20px;
-    background-color: var(--clr-white);
+    padding: 0px 20px;
+    background-color: white;
     border-radius: 50px;
     color: var(--clr-dark);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 1px solid var(--clr-dark-primary);
 }
 
 .quiz-jum .quiz-question .lp-options{
@@ -798,6 +825,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+    font-family: Myanmar-Sagar;
 }
 
 /* @media (max-width: 576px) {
@@ -1138,6 +1166,7 @@ body {
     color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     margin-top: 20px;
+    font-family: Helvetica-Rounded;
 }
 
 @media (max-width: 576px) {
@@ -1146,5 +1175,6 @@ body {
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
+        
     }
 }

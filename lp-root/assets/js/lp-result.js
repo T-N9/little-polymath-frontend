@@ -35,11 +35,11 @@ resultTotal.innerHTML += `
 `;
 
 resultBonus.innerHTML += `
-    ကျန်ရှိသော အသက် ❤️ bonus ➼ <span class="h-d-s-text">${en2mm(total_score)} x ${en2mm(remain_life)}</span> 
+    ကျန်ရှိသော အသက် ❤️ bonus ➼ <span class="h-d-s-text">${en2mm(total_score)} + ${en2mm(remain_life * 100)}</span> 
 `;
 
 resultFinal.innerHTML += `
-    <span class="result-point h-d-s-text"> ${en2mm(total_score * remain_life)} <img class="lp-point" src="./assets/images/point.svg" alt="point"></span> 
+    <span class="result-point h-d-s-text"> ${en2mm(parseInt(total_score) + (remain_life * 100))} <img class="lp-point" src="./assets/images/point.svg" alt="point"></span> 
 `;
 
 

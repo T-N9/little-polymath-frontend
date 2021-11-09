@@ -55,7 +55,7 @@ const displayQuiz = (i) => {
     lpOp4.textContent = quizSetData[i].option[3];
 
     timerIndicator.classList.add('wait');
-    let time_i = 20;
+    let time_i = 15;
     document.querySelector('.score-timer').innerHTML = time_i;
     setTimeout(() => {
         timerIndicator.classList.remove('wait');
@@ -69,11 +69,11 @@ const displayQuiz = (i) => {
                 questionResult();
             }
     
-            if (time_i <= 13){
+            if (time_i <= 6){
                 timerIndicator.classList.add('timer-warning');
             }
     
-            if (time_i <= 6){
+            if (time_i <= 3){
                 timerIndicator.classList.remove('timer-warning');
                 timerIndicator.classList.add('timer-danger');
             }
@@ -203,8 +203,6 @@ const setLife = (no) => {
     console.log("Dead "+deadCount);
     let deadHeart = `<img class="lp-life" src="./assets/images/un-heart.png">`;
     
-
-
     lifeEl.innerHTML="";
     resultLife.innerHTML="";
     for(let d = 0; d < deadCount; d++){
