@@ -1,3 +1,9 @@
+let myQuizCon = localStorage.getItem("myCon");
+console.log(myQuizCon);
+// localStorage.clear();
+if(myQuizCon === "inGame"){
+    window.location.href = "index.html";
+}
 /* ---------------------------------------------------- */
 // Timer Indicator UX
 /* ---------------------------------------------------- */
@@ -25,7 +31,7 @@ const getData = () => {
     return quizSetData;
 }
 getData();
-console.log(quizSetData);
+// console.log(quizSetData);
 
 /* ---------------------------------------------------- */
 // Translation number (Eng to Myanmar)
@@ -46,6 +52,7 @@ const lpOp3 = document.querySelector('.lp-option-c');
 const lpOp4 = document.querySelector('.lp-option-d');
 
 const displayQuiz = (i) => {
+    localStorage.setItem("myCon", "inGame");
     lpQuesNo.textContent = en2mm(quiz_i+1);
     lpCategory.textContent = quizSetData[i].category;
     lpQuestion.textContent = quizSetData[i].question;
@@ -121,13 +128,13 @@ const validateAns = (ans) => {
 
     if(quizSetData[quiz_i].option[ans] === quizSetData[quiz_i].answer){
         userAns = true;
-        console.log("TRUE",quizSetData[quiz_i].option[ans]);
-        console.log("TRUE at "+ ans);
+        // console.log("TRUE",quizSetData[quiz_i].option[ans]);
+        // console.log("TRUE at "+ ans);
     }else {
         userAns = false;
-        console.log("FALSE",quizSetData[quiz_i].option[ans]);
+        // console.log("FALSE",quizSetData[quiz_i].option[ans]);
     }
-    console.log(score_Timer);
+    // console.log(score_Timer);
     return userAns, score_Timer, ansIndex;
 }
 
@@ -163,14 +170,14 @@ const nextQuestion = () => {
             let sessionData = [score, life ];
             sessionStorage.setItem("sessionData" , sessionData);
             window.location.href = "lp-result.html";
-            console.log("Out of QUiz");
+            // console.log("Out of QUiz");
         } else {
             try{
                 quizJumEl.classList.remove('waiting');
                 quizJumEl.classList.add('ready');
                 displayQuiz(quiz_i);
             }catch(e){
-                console.log("Here is error");
+                // console.log("Here is error");
             }
         }
 
@@ -200,7 +207,7 @@ const resultMark = document.querySelector('.result-mark');
 // Setting user lives
 const setLife = (no) => {
     let deadCount = 4-life;
-    console.log("Dead "+deadCount);
+    // console.log("Dead "+deadCount);
     let deadHeart = `<img class="lp-life" src="./assets/images/un-heart.png">`;
     
     lifeEl.innerHTML="";
@@ -285,7 +292,7 @@ const questionResult = () => {
         document.querySelector('.quiz-result').classList.add('show');
     }, 1000);
 
-    console.log(clickedBtnIndex, ansIndex)
+    // console.log(clickedBtnIndex, ansIndex)
     } else {
         userMark.innerHTML = en2mm(score);
         optionButtons.forEach(resultBtn => {

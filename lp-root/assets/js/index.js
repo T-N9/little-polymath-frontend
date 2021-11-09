@@ -51,6 +51,9 @@ const dataSet = async () => {
 
     // console.log(questionSet);
     window.sessionStorage.setItem("items", JSON.stringify(questionSet));
+
+    localStorage.setItem("myCon", "ready");
+    // localStorage.clear();
 }
 dataSet();
 

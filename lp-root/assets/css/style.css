@@ -615,6 +615,9 @@ body {
 /* ------------------- */
 /* LP quiz section */
 /* ------------------- */
+.main-quiz {
+    min-height: unset;
+}
 
 .timer-path {
     width: 100%;
@@ -695,6 +698,8 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 10px;
+    min-height: 30px;
+    transition: all 500ms ease-out;
 }
 
 .ques-mark .lives > .lp-life:not(:last-child) {
@@ -704,7 +709,7 @@ body {
 
 .lp-life{
     width: 30px;
-    
+    transition: all 500ms ease-out;
 }
 
 .ques-mark .mark {
@@ -725,7 +730,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px 40px;
-    margin-top: 20px;
 }
 
 @media (max-width:768px) {
@@ -943,7 +947,7 @@ body {
 .quiz-result .result-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     width: 800px;
     min-height: 500px;
     background-color: var(--clr-dark);
@@ -952,6 +956,12 @@ body {
     padding: 22px 40px;
     color: white;
     overflow: auto;
+}
+
+@media (max-width: 576px) {
+    .quiz-result .result-wrapper {
+        background: linear-gradient(180deg, rgba(51, 74, 82, 0.82) 0%, #334A52 39.02%, #334A52 63.02%, rgba(51, 74, 82, 0.63) 100%);
+    }
 }
 
 .quiz-result .result-wrapper .result-header {
@@ -1041,12 +1051,22 @@ body {
     display: flex;
 }
 
+.result-score .result-life > img:not(:last-child){
+    margin-right: 10px;
+}
+
 .result-score .result-point {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
 }
+
+@media (max-width: 576px) {
+    .result-score .result-point {
+        margin-top: 20px;
+    }
+}
+
 
 .result-score .result-point > img {
     width: 40px;
