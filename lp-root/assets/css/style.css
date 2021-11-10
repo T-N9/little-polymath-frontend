@@ -590,7 +590,7 @@ body {
 
 @media (max-width: 576px) {
     .how-to-play .htp-wrapper .htp-para {
-        /* font-size: 1rem; */
+        font-size: 1.1rem;
         margin-top: 20px;
     }
 }
@@ -755,6 +755,7 @@ body {
     padding: 50px 40px;
     border-radius: 10px;
     border: 1px solid var(--clr-dark-primary);
+    user-select: none;
 }
 
 @media (max-width: 786px) {
@@ -768,7 +769,7 @@ body {
         width: 100%;
         border-radius: 0;
         padding: 35px 20px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
@@ -793,8 +794,12 @@ body {
 }
 
 @media (max-width: 576px) {
+    .quiz-jum .quiz-question .lp-category{
+        font-size: 1rem;
+    }
+    
     .quiz-jum .quiz-question .lp-options{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -980,6 +985,8 @@ body {
 
     .quiz-result .result-wrapper .result-header {
         flex-direction: column;
+        margin-bottom: 20px;
+        align-items: flex-start;
     }
 }
 
@@ -1005,11 +1012,20 @@ body {
 
 .quiz-result .result-wrapper .result-body {
     font-size: var(--fs-500);
+    user-select: none;
 }
 
 @media (max-width: 576px) {
+    .quiz-result .result-wrapper .result-header .result-img {
+        align-self: center;
+    }
+
     .quiz-result .result-wrapper .result-body {
         margin-top: 0px;
+    }
+
+    .quiz-result.show .result-expl {
+        font-size: 1.1rem;
     }
 }
 
