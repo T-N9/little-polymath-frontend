@@ -110,6 +110,11 @@ button {
     cursor: pointer;
 }
 
+main{
+    max-width: 1440px;
+    margin: auto;
+}
+
 /* remove animations for people who've turned them off */
 
 @media (prefers-reduced-motion: reduce) {  
