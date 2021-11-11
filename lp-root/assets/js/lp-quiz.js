@@ -62,7 +62,7 @@ const displayQuiz = (i) => {
     lpOp4.textContent = quizSetData[i].option[3];
 
     timerIndicator.classList.add('wait');
-    let time_i = 5;
+    let time_i = 15;
     document.querySelector('.score-timer').innerHTML = time_i;
     setTimeout(() => {
         timerIndicator.classList.remove('wait');
@@ -94,7 +94,11 @@ const displayQuiz = (i) => {
 
 quizJumEl.classList.remove('waiting');
 quizJumEl.classList.add('ready');
-displayQuiz(quiz_i);
+
+document.body.onload = function (){
+    displayQuiz(quiz_i);
+}
+
 
 
 /* ---------------------------------------------------- */
