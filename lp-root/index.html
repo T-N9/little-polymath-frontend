@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,6 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
-
 <body>
     <main class="hero-main">
         <header class="hero-jum">
@@ -151,6 +149,7 @@
                 </div>
             </div>
         </header>
+        <!-- How to play modal -->
         <section class="how-to-play htp-hidden">
             <div class="close-htp-area">
             </div>
@@ -190,6 +189,7 @@
         </footer>
     </main>
     <script>
+        // Google Font init
         document.querySelector('head').innerHTML += `
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -197,12 +197,10 @@
         `;
 
         // --- Preloading Images for Better UX
-
         function preloadImage(url){
         var img=new Image();
         img.src=url;
         }
-
         preloadImage('./assets/images/heart.png');
         preloadImage('./assets/images/un-heart.png');
         preloadImage('./assets/images/correct-answer.svg');

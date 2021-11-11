@@ -12,7 +12,8 @@ function en2mm(num) {
 const resultMedia = document.querySelector('.result-media');
 const resultBool = document.querySelector('.result-bool');
 const resultTitle = document.querySelector('.result-title');
-const resultTotal = document.querySelector('.result-total');
+const remainLife = document.querySelector('.remain-life');
+const scoreTotal = document.querySelector('.score-total');
 const resultBonus = document.querySelector('.result-bonus');
 const resultFinal = document.querySelector('.result-final');
 const resultHome = document.querySelector('.result-home');
@@ -22,7 +23,7 @@ let total_score = result_data[0];
 let remain_life = result_data[1];
 // console.log(result_data);
 
-if(total_score > 60) {
+if(total_score > 60 && remain_life > 1) {
     resultMedia.innerHTML = `<img src="assets/images/Completed-game.svg" alt="Complete-Game">`;
     resultBool.textContent = "ဂုဏ်ယူပါတယ်။";
 }else {
@@ -30,18 +31,21 @@ if(total_score > 60) {
     resultBool.textContent = "ထပ်မံကြိုးစားကြည့်ပါ။";
 }
 
-resultTotal.innerHTML += `
-    ရမှတ် point - <span class="result-point h-d-s-text flex-auto">${en2mm(total_score)} <img class="lp-point" src="./assets/images/point.svg" alt="point"></span>
+scoreTotal.innerHTML = `
+    <span>${en2mm(total_score)} <img class="lp-point" src="./assets/images/point.svg" alt="point"></span>
 `;
 
-resultBonus.innerHTML += `
-    ကျန်ရှိသော အသက် ❤️ bonus ➼ <span class="h-d-s-text">${en2mm(total_score)} + ${en2mm(remain_life * 100)}</span> 
+remainLife.innerHTML = `
+    <span>${en2mm(remain_life)} <img class="lp-life" src="./assets/images/heart.png" alt="heart"></span>
 `;
 
-resultFinal.innerHTML += `
-    <span class="result-point h-d-s-text"> ${en2mm(parseInt(total_score) + (remain_life * 100))} <img class="lp-point" src="./assets/images/point.svg" alt="point"></span> 
+resultBonus.innerHTML = `
+    ${en2mm(total_score)} + ( ${en2mm(remain_life)} x ${en2mm(100)})
 `;
 
+resultFinal.innerHTML = `
+    <span class="flex-auto"> ${en2mm(parseInt(total_score) + (remain_life * 100))} <img class="lp-point" src="./assets/images/point.svg" alt="point"></span>
+`;
 
 switch (true) {
     
@@ -62,10 +66,10 @@ switch (true) {
         resultTitle.textContent= "အောင်မြင်စွာ ဖြေဆိုနိုင်ခဲ့ပါသည်။";
         break;
 
-    case (total_score > 60):
+    case (total_score > 60 && remain_life > 1):
         resultTitle.textContent= "ဖြေဆိုမှု အောင်မြင်ပါသည်။";
         break;
-    case (total_score < 60):
+    case (remain_life < 1):
         resultTitle.textContent= "ဖြေဆိုမှု မအောင်မြင်ပါ။";
         break;
 }
@@ -73,4 +77,5 @@ switch (true) {
 resultHome.addEventListener('click', ()=> {
     window.location.href = "index.html";
     sessionStorage.removeItem("sessionData");
+    localStorage.clear();
 });

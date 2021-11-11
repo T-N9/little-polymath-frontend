@@ -35,11 +35,9 @@ const rebootRandomNum = () => {
 const dataSet = async () => {
     const response = await fetch('./assets/data/little-polymath-data.json');
     const data = await response.json();
-
     const difficultyArr = [ data.easy, data.easy_medium, data.medium, data.medium_hard, data.hard];
     const getQuestionSet = (difficulty) => {
         for(let i = 0; i <= randomNumbers.length -1; i++){
-            // document.querySelector('section').innerHTML += `<p>${difficulty[randomNumbers[i]-1].question}</p>`;
             questionSet.push(difficulty[randomNumbers[i]-1]);
         }
     }
@@ -49,10 +47,11 @@ const dataSet = async () => {
         getQuestionSet(item);
     })
 
-    // console.log(questionSet);
+    console.log(questionSet);
     window.sessionStorage.setItem("items", JSON.stringify(questionSet));
 
     localStorage.setItem("myCon", "ready");
+    // console.log(localStorage.getItem("myCon"));
     // localStorage.clear();
 }
 dataSet();
@@ -62,7 +61,6 @@ dataSet();
 // Also carrying session data
 /* ---------------------------------------------------- */
 const startBtn = document.querySelector('.hero-start-btn');
-
 const startQuiz = () => {
     window.location.href = "lp-quiz.html";
 }
@@ -79,20 +77,20 @@ const closeHtpBtn = document.querySelector('.close-htp');
 const howToPlay =document.querySelector('.how-to-play');
 const closeHtpArea = document.querySelector('.close-htp-area');
 
-htpBtn.addEventListener('click', ()=> {
+// How to play modal dom
+function howToPlayModal() {
     howToPlay.classList.toggle('htp-hidden');
     howToPlay.classList.toggle('htp-active');
+}
+
+htpBtn.addEventListener('click', ()=> {
+    howToPlayModal();
 });
 
 closeHtpBtn.addEventListener('click', () => {
-    howToPlay.classList.toggle('htp-hidden');
-    howToPlay.classList.toggle('htp-active');
+    howToPlayModal();
 });
 
 closeHtpArea.addEventListener('click', () => {
-    howToPlay.classList.toggle('htp-hidden');
-    howToPlay.classList.toggle('htp-active');
-})
-
-
-
+    howToPlayModal();
+});

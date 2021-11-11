@@ -31,7 +31,7 @@ const getData = () => {
     return quizSetData;
 }
 getData();
-// console.log(quizSetData);
+console.log(quizSetData);
 
 /* ---------------------------------------------------- */
 // Translation number (Eng to Myanmar)
@@ -62,7 +62,7 @@ const displayQuiz = (i) => {
     lpOp4.textContent = quizSetData[i].option[3];
 
     timerIndicator.classList.add('wait');
-    let time_i = 15;
+    let time_i = 5;
     document.querySelector('.score-timer').innerHTML = time_i;
     setTimeout(() => {
         timerIndicator.classList.remove('wait');
