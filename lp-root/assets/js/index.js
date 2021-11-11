@@ -61,11 +61,12 @@ dataSet();
 // Also carrying session data
 /* ---------------------------------------------------- */
 const startBtn = document.querySelector('.hero-start-btn');
+const letsGoBtn = document.querySelector('.fui-btn');
 const startQuiz = () => {
     window.location.href = "lp-quiz.html";
 }
 
-startBtn.addEventListener('click', () => {
+letsGoBtn.addEventListener('click', () => {
     startQuiz();
 });
 
@@ -76,12 +77,22 @@ const htpBtn = document.querySelector('.hero-htp-btn');
 const closeHtpBtn = document.querySelector('.close-htp');
 const howToPlay =document.querySelector('.how-to-play');
 const closeHtpArea = document.querySelector('.close-htp-area');
+const fuiSection = document.querySelector('.fui');
 
 // How to play modal dom
 function howToPlayModal() {
     howToPlay.classList.toggle('htp-hidden');
     howToPlay.classList.toggle('htp-active');
 }
+
+function fuiModal() {
+    fuiSection.classList.toggle('hidden');
+    fuiSection.classList.toggle('show');
+}
+
+startBtn.addEventListener('click', ()=> {
+    fuiModal();
+})
 
 htpBtn.addEventListener('click', ()=> {
     howToPlayModal();

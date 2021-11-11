@@ -23,7 +23,7 @@ let total_score = result_data[0];
 let remain_life = result_data[1];
 // console.log(result_data);
 
-if(total_score > 60 && remain_life > 1) {
+if(total_score > 60 && remain_life >= 1) {
     resultMedia.innerHTML = `<img src="assets/images/Completed-game.svg" alt="Complete-Game">`;
     resultBool.textContent = "ဂုဏ်ယူပါတယ်။";
 }else {
