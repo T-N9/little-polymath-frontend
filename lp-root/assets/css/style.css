@@ -12,6 +12,7 @@
     --clr-white: #E6F4F1;
     --clr-light-success: #3CDD46;
     --clr-light-danger: #FF5E8A;
+    --clr-warning: #EEF975;
 
     /* font-sized */
     --fs-900: 3rem;
@@ -70,7 +71,6 @@
 }
 
 /* Reset margins */
-
 body,
 h1,
 h2,
@@ -150,6 +150,7 @@ main{
     margin-inline: auto;
     max-width: 80rem;
 }
+
 /* highlight title */
 .h-title {
     color: var(--clr-dark-primary);
@@ -413,12 +414,7 @@ body {
 
 @media (max-width: 576px) {
     .hero-jum .hero-title > h1 {
-        /* font-size: 2rem; */
         text-align: center;
-    }
-
-    .hero-jum .hero-title > h1 .m-text{
-        /* font-size: 1.8rem; */
     }
 }
 
@@ -659,7 +655,7 @@ body {
 }
 
 .timer-path .timer-indicator.timer-warning {
-    background-color: #EEF975;
+    background-color: var(--clr-warning);
 }
 .timer-path .timer-indicator.timer-danger {
     background-color: var(--clr-light-danger);
