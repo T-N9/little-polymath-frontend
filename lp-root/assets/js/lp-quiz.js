@@ -108,12 +108,12 @@ let clickedBtnIndex; /* Clicked Button Index */
 let ansIndex;
 const optionButtons = Array.from(document.getElementsByClassName('op-button'));
 optionButtons.forEach(btn => {
-    btn.addEventListener('dblclick', ()=>{
+    btn.addEventListener('click', ()=>{
         optionButtons.forEach(btnClass => {
             btnClass.classList.value = "op-button";
         });
         btn.classList.add("selected");
-        clickedBtnIndex = parseInt(btn.getAttribute('ondblclick').slice(12,-1));
+        clickedBtnIndex = parseInt(btn.getAttribute('onclick').slice(12,-1));
         return clickedBtnIndex;
     });
 });
@@ -276,7 +276,7 @@ const questionResult = () => {
     if(life > 0) {
         userMark.innerHTML = en2mm(score);
         optionButtons.forEach(resultBtn => {
-            let readBtn = resultBtn.getAttribute('ondblclick').slice(12,-1);
+            let readBtn = resultBtn.getAttribute('onclick').slice(12,-1);
             resultBtn.setAttribute('disabled', '');
 
             if(readBtn == ansIndex) {
@@ -300,7 +300,7 @@ const questionResult = () => {
     } else {
         userMark.innerHTML = en2mm(score);
         optionButtons.forEach(resultBtn => {
-            let readBtn = resultBtn.getAttribute('ondblclick').slice(12,-1);
+            let readBtn = resultBtn.getAttribute('onclick').slice(12,-1);
             resultBtn.setAttribute('disabled', '');
 
             if(readBtn == ansIndex) {

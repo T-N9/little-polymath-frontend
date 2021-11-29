@@ -1248,7 +1248,7 @@ body {
 }
 
 .result-jum .result-text .result-cal{
-    width: 90%;
+    width: 60%;
     margin: 10px auto;
     background-color: var(--clr-dark);
     color: white;
@@ -1260,6 +1260,19 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+    .result-jum .result-text .result-cal{
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .result-jum .result-text .result-cal{
+        width: 90%;
+    }
+}
+
 .result-jum .result-text .result-cal .result-status {
     margin-bottom: 15px;
 }
@@ -1326,12 +1339,14 @@ body {
 }
 
 .result-jum .result-text .result-bool {
+    text-align: center;
     font-size: 1.5rem;
     color: var(--clr-dark-primary);
     margin-bottom: 10px;
 }
 
 .result-jum .result-text .result-title {
+    text-align: center;
     font-size: 1rem;
     font-weight: 400;
 }
